@@ -8,6 +8,8 @@ from tkinter import ttk, messagebox
 import webbrowser
 from typing import Dict, Optional, Callable
 import logging
+import os
+import getpass
 
 logger = logging.getLogger(__name__)
 
@@ -155,6 +157,11 @@ class CredentialManagerUI:
         Returns:
             Dictionary of credentials keyed by source ID
         """
+        # Check if GUI is available
+        if not self._gui_available():
+            logger.info("GUI not available, falling back to CLI input")
+            return self._show_cli()
+        
         self.root = tk.Tk()
         self.root.title("News Aggregator - API Credentials Setup")
         self.root.geometry("900x700")
@@ -490,6 +497,106 @@ class CredentialManagerUI:
             self.collected_credentials = {}
             self.root.quit()
             self.root.destroy()
+
+    def _gui_available(self) -> bool:
+        """Check if GUI (Tkinter) is available."""
+        try:
+            # Check if DISPLAY is set on Unix-like systems
+            if os.name != 'nt' and not os.environ.get('DISPLAY'):
+                return False
+            
+            # Try to create a Tk instance
+            test_root = tk.Tk()
+            test_root.withdraw()
+            test_root.destroy()
+            return True
+        except Exception as e:
+            logger.debug(f"GUI not available: {e}")
+            return False
+
+    def _show_cli(self) -> Dict[str, Dict[str, str]]:
+        """Command-line interface for credential management."""
+        self.collected_credentials = {}
+        
+        print("\n" + "=" * 80)
+        print("🔑 NEWS AGGREGATOR - API CREDENTIALS SETUP")
+        print("=" * 80)
+        
+        # Count sources requiring credentials
+        sources_needing_creds = [s for s in self.missing_sources
+                                if self.API_REGISTRATION_URLS.get(s, {}).get("fields", [])]
+        
+        print(f"\nSetting up API credentials for {len(sources_needing_creds)} source(s).")
+        print("💡 Visit the registration URLs below to sign up and get your free API keys.")
+        print("📝 Note: 14 other sources work via RSS without any setup!\n")
+        
+        # Process each source
+        for source_id in self.missing_sources:
+            source_info = self.API_REGISTRATION_URLS.get(source_id, {})
+            source_name = source_info.get("name", source_id.upper())
+            fields = source_info.get("fields", [])
+            
+            print("\n" + "-" * 80)
+            print(f"📰 {source_name}")
+            print("-" * 80)
+            print(f"Description: {source_info.get('description', 'News source')}")
+            
+            if not fields:
+                print("✅ No API key required - uses RSS feeds")
+                continue
+            
+            print(f"\n🔗 Get your API key here: {source_info.get('url', 'N/A')}")
+            print(f"\nEnter credentials for {source_name} (press Enter to skip):")
+            
+            source_creds = {}
+            for field_name in fields:
+                field_label = field_name.replace('_', ' ').title()
+                
+                # Use getpass for sensitive fields, but fall back to input if not on TTY
+                try:
+                    if "key" in field_name.lower() or "password" in field_name.lower():
+                        if os.isatty(0):  # Check if stdin is a terminal
+                            value = getpass.getpass(f"  {field_label}: ").strip()
+                        else:
+                            value = input(f"  {field_label}: ").strip()
+                    else:
+                        value = input(f"  {field_label}: ").strip()
+                except (EOFError, KeyboardInterrupt):
+                    value = ""
+                
+                if value:
+                    source_creds[field_name] = value
+            
+            if source_creds:
+                self.collected_credentials[source_id] = source_creds
+                print(f"✅ Credentials entered for {source_name}")
+            else:
+                print(f"⏭️  Skipped {source_name}")
+        
+        # Summary
+        print("\n" + "=" * 80)
+        if self.collected_credentials:
+            print(f"💾 Saving credentials for {len(self.collected_credentials)} source(s)...")
+            
+            # Save credentials
+            if self.on_save:
+                try:
+                    self.on_save(self.collected_credentials)
+                    print("✅ Credentials saved successfully!")
+                    
+                    print("\nConfigured sources:")
+                    for source_id in self.collected_credentials.keys():
+                        source_name = self.API_REGISTRATION_URLS.get(source_id, {}).get("name", source_id)
+                        print(f"  • {source_name}")
+                except Exception as e:
+                    print(f"❌ Failed to save credentials: {e}")
+                    logger.error(f"Failed to save credentials: {e}", exc_info=True)
+        else:
+            print("⏭️  No credentials entered - you can still use RSS-based sources")
+        
+        print("=" * 80 + "\n")
+        
+        return self.collected_credentials
 
 
 def show_credential_manager(missing_sources: list, on_save: Optional[Callable] = None) -> Dict[str, Dict[str, str]]:

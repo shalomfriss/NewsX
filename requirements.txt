@@ -13,6 +13,10 @@ openai>=1.0.0,<2.0.0
 # RSS feed parsing
 feedparser>=6.0.10,<7.0.0
 
+# Web scraping for full article content
+beautifulsoup4>=4.12.0,<5.0.0
+newspaper3k>=0.2.8
+
 # Database
 SQLAlchemy>=2.0.0,<3.0.0
 psycopg2-binary>=2.9.0,<3.0.0  # PostgreSQL adapter

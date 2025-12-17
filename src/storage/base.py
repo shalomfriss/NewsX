@@ -45,7 +45,7 @@ class ArticleRepository(ABC):
 
         Args:
             url: The article URL
-
+w
         Returns:
             Article if found, None otherwise
         """

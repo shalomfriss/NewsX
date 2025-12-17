@@ -10,6 +10,7 @@ from email.utils import parsedate_to_datetime
 
 from .base import NewsSource, NewsSourceException
 from ..models.article import Article, ArticleSource
+from ..utils.content_scraper import ContentScraper
 
 logger = logging.getLogger(__name__)
 
@@ -83,8 +84,17 @@ class RSSSource(NewsSource):
         ]
     }
 
-    def __init__(self, source_id: ArticleSource, credentials: Optional[Dict[str, str]] = None, **kwargs):
-        """Initialize RSS source."""
+    def __init__(self, source_id: ArticleSource, credentials: Optional[Dict[str, str]] = None, 
+                 fetch_full_content: bool = True, **kwargs):
+        """
+        Initialize RSS source.
+        
+        Args:
+            source_id: The article source identifier
+            credentials: Optional credentials (not used for RSS)
+            fetch_full_content: Whether to scrape full article content from URLs
+            **kwargs: Additional arguments
+        """
         super().__init__(
             source_id=source_id,
             credentials=credentials,
@@ -95,6 +105,9 @@ class RSSSource(NewsSource):
         self.feed_urls = self.RSS_FEEDS.get(source_id, [])
         if not self.feed_urls:
             raise NewsSourceException(f"No RSS feeds configured for {source_id}")
+        
+        self.fetch_full_content = fetch_full_content
+        self.content_scraper = ContentScraper() if fetch_full_content else None
 
     def requires_credentials(self) -> bool:
         """RSS feeds don't require credentials."""
@@ -140,7 +153,11 @@ class RSSSource(NewsSource):
         # Trim to max_articles
         articles = articles[:max_articles]
 
-        logger.info(f"Fetched {len(articles)} articles from {self.source_id.value} RSS feeds")
+        if not articles:
+            logger.warning(f"No articles fetched from {self.source_id.value} - all feeds may have failed or returned no content")
+        else:
+            logger.info(f"Fetched {len(articles)} articles from {self.source_id.value} RSS feeds")
+        
         return articles
 
     def _fetch_from_feed(
@@ -153,6 +170,9 @@ class RSSSource(NewsSource):
     ) -> List[Article]:
         """Fetch articles from a single RSS feed."""
         articles = []
+        
+        # Extract category from feed URL
+        feed_category = self._extract_category_from_url(feed_url)
 
         try:
             # Parse the RSS feed
@@ -165,7 +185,7 @@ class RSSSource(NewsSource):
 
             for entry in feed.entries[:max_articles]:
                 try:
-                    article = self._parse_entry(entry)
+                    article = self._parse_entry(entry, feed_category)
 
                     if not article:
                         logger.debug(f"Failed to parse entry from {feed_url}")
@@ -219,7 +239,45 @@ class RSSSource(NewsSource):
 
         return articles
 
-    def _parse_entry(self, entry) -> Optional[Article]:
+    def _extract_category_from_url(self, url: str) -> Optional[str]:
+        """Extract category/topic from feed URL."""
+        # NPR feed IDs mapping
+        npr_feeds = {
+            '1001': 'News',
+            '1014': 'Politics',
+            '1003': 'US News',
+        }
+        
+        # Check NPR feed IDs
+        for feed_id, category in npr_feeds.items():
+            if feed_id in url:
+                return category
+        
+        # Common category patterns in RSS URLs
+        categories = {
+            'politics': 'Politics',
+            'political': 'Politics',
+            'congress': 'Congress',
+            'whitehouse': 'White House',
+            'world': 'World',
+            'national': 'National',
+            'us': 'US News',
+            'domestic': 'Domestic',
+            'administration': 'Administration',
+            'senate': 'Senate',
+            'defense': 'Defense',
+            'policy': 'Policy',
+            'topstories': 'Top Stories',
+            'headlines': 'Headlines',
+        }
+        
+        url_lower = url.lower()
+        for key, category in categories.items():
+            if key in url_lower:
+                return category
+        return None
+
+    def _parse_entry(self, entry, feed_category: Optional[str] = None) -> Optional[Article]:
         """Parse an RSS feed entry."""
         try:
             # Extract title
@@ -241,6 +299,18 @@ class RSSSource(NewsSource):
                 content = entry.content[0].value
             elif description:
                 content = description
+            
+            # Fetch full content from article URL if enabled
+            if self.fetch_full_content and url:
+                try:
+                    full_content = self.content_scraper.fetch_article_content(url)
+                    if full_content and len(full_content) > len(content or ''):
+                        content = full_content
+                        logger.debug(f"Fetched full content for: {title[:50]}")
+                except Exception as e:
+                    logger.debug(f"Could not fetch full content for {url}: {e}")
+                    # Fall back to RSS content
+                    pass
 
             # Extract author
             author = entry.get('author') or entry.get('dc:creator')
@@ -268,11 +338,45 @@ class RSSSource(NewsSource):
             # Extract tags/categories
             categories = []
             keywords = []
+            
+            # Add feed-level category first
+            if feed_category and feed_category not in categories:
+                categories.append(feed_category)
+            
             if hasattr(entry, 'tags'):
                 for tag in entry.tags:
                     tag_term = tag.get('term', '')
+                    tag_scheme = tag.get('scheme', '') or ''
                     if tag_term:
-                        keywords.append(tag_term)
+                        # Skip numeric-only tags (likely feed IDs)
+                        if tag_term.isdigit():
+                            continue
+                        
+                        # If tag has a scheme/label indicating it's a category, use it as category
+                        if tag.get('label') or 'category' in tag_scheme.lower():
+                            if tag_term not in categories:
+                                categories.append(tag_term)
+                        else:
+                            if tag_term not in keywords:
+                                keywords.append(tag_term)
+            
+            # Also check for category field (skip if numeric)
+            if hasattr(entry, 'category'):
+                cat_val = entry.category if isinstance(entry.category, str) else str(entry.category)
+                if cat_val and not cat_val.isdigit() and cat_val not in categories:
+                    categories.append(cat_val)
+            
+            # Extract from feed categories
+            if hasattr(entry, 'categories'):
+                for cat in entry.categories:
+                    if isinstance(cat, dict):
+                        cat_term = cat.get('term', '')
+                        if cat_term and cat_term not in categories and not cat_term.isdigit():
+                            categories.append(cat_term)
+                    elif isinstance(cat, (list, tuple)) and len(cat) > 0:
+                        cat_val = cat[1] if len(cat) > 1 else cat[0]
+                        if cat_val and cat_val not in categories and not str(cat_val).isdigit():
+                            categories.append(cat_val)
 
             return Article(
                 title=title,
