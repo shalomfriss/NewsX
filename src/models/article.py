@@ -51,7 +51,14 @@ class Article(BaseModel):
         if isinstance(v, datetime):
             return v
         if isinstance(v, str):
-            # Try multiple formats
+            # Try ISO 8601 format with timezone first (e.g., 2025-12-19T18:25:12-05:00)
+            try:
+                from dateutil import parser
+                return parser.isoparse(v).replace(tzinfo=None)
+            except:
+                pass
+            
+            # Try multiple standard formats
             for fmt in [
                 "%Y-%m-%dT%H:%M:%SZ",
                 "%Y-%m-%d %H:%M:%S",
@@ -64,14 +71,43 @@ class Article(BaseModel):
                     continue
         raise ValueError(f"Unable to parse datetime: {v}")
 
+    def get_publication_name(self) -> str:
+        """Get human-readable publication name from source."""
+        source_names = {
+            'newsapi': 'NewsAPI',
+            'guardian': 'The Guardian',
+            'nyt': 'The New York Times',
+            'bbc': 'BBC News',
+            'reuters': 'Reuters',
+            'ap': 'Associated Press',
+            'politico': 'Politico',
+            'the_hill': 'The Hill',
+            'bloomberg': 'Bloomberg',
+            'wsj': 'The Wall Street Journal',
+            'npr': 'NPR',
+            'cnn': 'CNN',
+            'abc': 'ABC News',
+            'cbs': 'CBS News',
+            'nbc': 'NBC News',
+            'pbs': 'PBS NewsHour',
+            'washington_post': 'The Washington Post',
+            'the_atlantic': 'The Atlantic',
+            'propublica': 'ProPublica',
+            'al_jazeera': 'Al Jazeera'
+        }
+        source_value = self.source.value if hasattr(self.source, 'value') else str(self.source)
+        return source_names.get(source_value, source_value.upper())
+
     def to_markdown(self) -> str:
         """Convert article to markdown format."""
         # Get source value (handle both string and enum)
         source_value = self.source.value if hasattr(self.source, 'value') else str(self.source)
+        publication_name = self.get_publication_name()
 
         md_lines = [
             f"# {self.title}",
             "",
+            f"**Publication:** {publication_name}",
             f"**Source:** {source_value}",
             f"**Published:** {self.published_at.strftime('%Y-%m-%d %H:%M:%S UTC')}",
             f"**URL:** {self.url}",
@@ -89,7 +125,7 @@ class Article(BaseModel):
         md_lines.append("")
 
         if self.image_url:
-            md_lines.append(f"![Article Image]({self.image_url})")
+            md_lines.append(f"![Article Thumbnail]({self.image_url})")
             md_lines.append("")
 
         if self.description:

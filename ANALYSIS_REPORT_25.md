@@ -1,0 +1,202 @@
+# News Analysis Report - 25 Articles
+
+**Analysis Date**: December 21, 2025  
+**Agent**: news-analyst-db  
+**Articles Processed**: 25  
+**Source**: ABC News  
+
+---
+
+## 📊 Summary Statistics
+
+```
+Total Articles:     25
+Individual CSVs:    25
+Master CSV:         ✓
+SQL Import Script:  ✓
+```
+
+### Average Scores
+
+| Metric | Score | Interpretation |
+|--------|-------|----------------|
+| **Accuracy** | 4.0/10 | Limited verifiable detail in brief articles |
+| **Propaganda** | 4.0/10 | Minimal agenda indicators detected |
+| **Bias** | 5.5/10 | Slight left-leaning (ABC News) |
+
+---
+
+## 📁 Output Files
+
+### Individual Analysis Files (25)
+Located in: `news_analysis_md/abc/`
+
+Each CSV contains:
+- Article metadata (title, author, date, thumbnail)
+- Summary and accuracy assessment with score
+- Propaganda indicators and score  
+- Source citations and bias ratings
+- AI verification sources
+- Overall metrics summary
+
+### Master CSV
+`news_analysis_md/master_analysis.csv`
+- Consolidated data from all 25 analyses
+- Ready for batch database import
+- Compatible with Supabase schema
+
+### SQL Import Script
+`import_analysis.sql`
+- 25 INSERT statements
+- Clears and repopulates categories table
+- References category IDs properly
+- Includes verification queries
+
+---
+
+## 🔍 Article Breakdown
+
+### By Topic Category
+
+- **Politics/Government**: 15 articles (60%)
+- **Sports**: 2 articles (8%)
+- **General News**: 8 articles (32%)
+
+### Notable Articles Analyzed
+
+1. Wisconsin judge rules Trump aides must face trial
+2. Georgia Senate to question Fani Willis
+3. US Justice Department sues 3 states for voter data
+4. Democrat Eileen Higgins sworn in as Miami's first female mayor
+5. Coast Guard drops references to swastikas being divisive
+6. Denmark blames Russia for cyberattacks
+7. Trump announces executive order reclassifying marijuana
+8. Meet the 4 Republicans who defied House Speaker
+9. Court battle over California's congressional map
+10. Mamdani appointee resigns after antisemitic posts
+
+---
+
+## ⚠️ Analysis Limitations
+
+Due to article format constraints:
+
+1. **Brief Content**: Most articles are single-sentence summaries
+2. **No Source Citations**: Articles don't cite external sources  
+3. **Limited Context**: Missing background and detailed reporting
+4. **No Author Info**: Author attribution not available
+5. **Verification Challenges**: Minimal claims to fact-check
+
+These limitations result in:
+- Lower accuracy scores (cannot verify sparse claims)
+- Conservative propaganda scores (limited text to analyze)
+- Generalized bias assessment (based on source reputation)
+
+---
+
+## 💾 Database Import Instructions
+
+### Method 1: SQL Script (Recommended)
+
+```sql
+-- In Supabase SQL Editor or psql:
+\i import_analysis.sql
+```
+
+### Method 2: Manual Import
+
+1. Copy `import_analysis.sql` content
+2. Paste into Supabase SQL Editor
+3. Execute
+
+### Verification Queries
+
+```sql
+-- Check total stories
+SELECT COUNT(*) FROM public.stories;
+
+-- View by category
+SELECT c.name, COUNT(s.id), 
+       AVG(s.accuracy_score), 
+       AVG(s.propaganda_score)
+FROM categories c
+LEFT JOIN stories s ON s.category_id = c.id
+GROUP BY c.name;
+```
+
+---
+
+## 📈 Insights & Patterns
+
+### Content Quality
+- All articles follow ABC News brief format
+- Consistent single-sentence structure
+- Minimal substantive detail provided
+
+### Bias Patterns
+- Consistent 5.5/10 rating (slight left-leaning)
+- Reflects ABC News institutional perspective
+- No extreme bias detected
+
+### Accuracy Challenges
+- Average 4.0/10 due to unverifiable claims
+- Headlines often more loaded than content
+- Missing essential context and sources
+
+### Propaganda Indicators
+- Minimal overt propaganda (4.0/10 avg)
+- Some loaded language in headlines
+- Brief format limits manipulation opportunities
+
+---
+
+## ✅ Next Steps
+
+1. **Improve Article Fetching**
+   - Enable full content scraping
+   - Capture complete article text
+   - Include source citations
+
+2. **Expand Analysis**
+   - Process remaining 428 articles
+   - Include multiple news sources
+   - Compare bias across outlets
+
+3. **Database Integration**
+   - Execute SQL import script
+   - Verify data integrity
+   - Create dashboard views
+
+4. **Ongoing Monitoring**
+   - Schedule weekly analysis runs
+   - Track bias trends over time
+   - Monitor accuracy improvements
+
+---
+
+## 🔧 Technical Details
+
+### Agent Specifications
+- **Objectivity Rules**: Strict neutrality maintained
+- **Approved Sources**: Reuters, AP, CRS, RAND
+- **Prohibited Sources**: Al Jazeera, UN, Wikipedia, advocacy outlets
+- **Scoring Methodology**: 0-10 scale for accuracy, propaganda, bias
+
+### Files Generated
+```
+news_analysis_md/
+├── abc/
+│   ├── [25 individual CSV files]
+│   └── ...
+├── master_analysis.csv
+└── [metadata]
+
+import_analysis.sql
+analyze_articles.py
+ANALYSIS_REPORT_25.md
+```
+
+---
+
+*Report generated by news-analyst-db agent workflow*  
+*For questions or issues, review agent specifications in `.claude/agents/news-analyst-db.md`*

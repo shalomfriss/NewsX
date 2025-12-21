@@ -201,6 +201,12 @@ Examples:
         help='Disable parallel fetching'
     )
 
+    parser.add_argument(
+        '--clean',
+        action='store_true',
+        help='Delete all existing articles before fetching'
+    )
+
     args = parser.parse_args()
 
     # Load settings
@@ -249,6 +255,16 @@ Examples:
                 logger.warning("Continuing without all credentials. Some sources will be unavailable.")
         else:
             logger.info("Continuing without all credentials. Some sources will be unavailable.")
+
+    # Clean news_md directory if requested
+    if args.clean:
+        import shutil
+        if settings.news_md_dir.exists():
+            logger.info(f"Cleaning directory: {settings.news_md_dir}")
+            print(f"\nCleaning directory: {settings.news_md_dir}")
+            shutil.rmtree(settings.news_md_dir)
+            settings.news_md_dir.mkdir(parents=True, exist_ok=True)
+            logger.info("Directory cleaned successfully")
 
     # Create repository
     repository = create_repository(settings)
@@ -309,7 +325,8 @@ Examples:
     print("\n" + "=" * 60)
     print("DOWNLOAD SUMMARY")
     print("=" * 60)
-    print(f"Total articles downloaded: {stats['saved']}")
+    print(f"Articles fetched: {stats['fetched']}")
+    print(f"New articles saved: {stats['saved']}")
     if stats['duplicates'] > 0:
         print(f"Duplicates skipped: {stats['duplicates']}")
     print(f"Active sources: {stats['sources']}")

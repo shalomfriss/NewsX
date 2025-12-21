@@ -1,0 +1,18 @@
+# Teachers in England face growing misogyny and need help dealing with sexual aggression, says Phillips
+
+**Source:** guardian
+**Published:** 2025-12-18 09:56:46 UTC
+**URL:** https://www.theguardian.com/politics/2025/dec/18/schools-england-rise-misogyny-towards-teachers-jess-phillips
+**Author:** Jessica Elgot Deputy political editor
+**Categories:** Politics
+**Keywords:** Education policy, Violence against women and girls, Education, Schools, Jess Phillips, England, Pornography, Children, Child protection, Young people, Article, News, Jessica Elgot, UK Home News
+
+![Article Image](https://media.guim.co.uk/fd7041148cfedfc6e7aa9203c92c2d9e90d91db4/904_0_1470_1176/500.jpg)
+
+## Summary
+
+Comments from safeguarding minister come as violence against women and girls strategy due to launch
+
+## Content
+
+Schools are reporting growing misogyny from pupils towards teachers and a lack of avenues to seek help about sexually aggressive behaviour, the safeguarding minister, Jess Phillips, has said. Phillips’ comments came as the government was due to launch its long-awaited violence against women and girls strategy. Children as young as 11 who demonstrate misogynistic behaviour will be taught the difference between pornography and real relationships, as part of a multimillion-pound investment to try to tackle misogyny in England’s schools. “I go into schools all the time, and what teachers have been saying to me for a number of years … is that they are seeing growing concerns around … the access to the pornography that their pupils see, and some of the attitudes that come from what they are seeing, misogynistic attitudes displayed towards teachers,” Phillips told BBC Radio 4’s Today programme. “I have seen so many cases that have led to total tragedy in the sharing of intimate images, for example, and parents desperate for resources. But it isn’t just teachers who would be able to ask for this help, but parents would be able to ask for their children to have interventions as well, and most importantly, children themselves who are worried about their behaviours.” A pilot scheme will involve experts supporting teachers to educate children about consent and the dangers of sharing explicit images. Phillips said the government would be looking “very closely” at what happens in Australia, which recently banned social media for under-16s, but stopped short of endorsing such a ban. “We would always take the best of what is available around the world with regard to the safety and security of children,” she told Times Radio. “But actually, the UK has been a trailblazer, and today, when the full policies are announced in the violence against women and girls strategy, you will see that online harm, online harms to children are very, very much part of that.” Phillips said she did not believe there would be considerable objections from parents who did not want children learning about the topics. “The reason that we have come up with this policy really came from parents, young people who’ve been victims, and they really wanted young women who have been victims, and 40% of young women within relationships have reported controlling behaviour within relationships, and most importantly parents telling us that they don’t have the tools to intervene,” she said. “And what those victims have told me is that they don’t want boys to just have a lifetime event – they want it to stop. That’s the fundamental and so the interventions will be about that.” The strategy, to be released on Thursday, includes dedicated rape and sexual offences teams and enforceable domestic abuse protection orders as well as £550m of funding to support victims.

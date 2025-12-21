@@ -100,7 +100,7 @@ class NewsAggregator:
                         source_id=source_id,
                         timeout=self.settings.request_timeout,
                         max_retries=self.settings.max_retries,
-                        fetch_full_content=False  # Disable to prevent hanging
+                        fetch_full_content=True  # Enable to get full article content
                     )
                 else:
                     source = source_class(
@@ -232,7 +232,7 @@ class NewsAggregator:
 
         if parallel:
             # Fetch in parallel using ThreadPoolExecutor with timeout
-            with ThreadPoolExecutor(max_workers=len(self.sources)) as executor:
+            with ThreadPoolExecutor(max_workers=min(len(self.sources), 10)) as executor:
                 future_to_source = {
                     executor.submit(
                         self.fetch_from_source,
@@ -245,14 +245,25 @@ class NewsAggregator:
                     for source_id in self.sources
                 }
 
-                for future in as_completed(future_to_source, timeout=60):
-                    source_id = future_to_source[future]
-                    try:
-                        articles = future.result(timeout=30)
-                        results[source_id] = articles
-                    except Exception as e:
-                        logger.error(f"✗ {source_id.value}: Timeout or error")
-                        results[source_id] = []
+                try:
+                    for future in as_completed(future_to_source, timeout=120):
+                        source_id = future_to_source[future]
+                        try:
+                            articles = future.result(timeout=60)
+                            results[source_id] = articles
+                        except TimeoutError:
+                            logger.error(f"✗ {source_id.value}: Request timed out")
+                            results[source_id] = []
+                        except Exception as e:
+                            logger.error(f"✗ {source_id.value}: {str(e)[:100]}")
+                            results[source_id] = []
+                except TimeoutError:
+                    # Some futures didn't complete in time - mark remaining as timed out
+                    logger.warning("Some sources timed out during fetch")
+                    for future, source_id in future_to_source.items():
+                        if source_id not in results:
+                            logger.error(f"✗ {source_id.value}: Overall timeout exceeded")
+                            results[source_id] = []
         else:
             # Fetch sequentially
             for source_id in self.sources:

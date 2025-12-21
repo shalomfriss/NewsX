@@ -159,6 +159,13 @@ class NYTSource(NewsSource):
     def _parse_top_story(self, item: Dict[str, Any]) -> Optional[Article]:
         """Parse a NYT Top Stories article."""
         try:
+            # Check content length - NYT Top Stories only provide abstracts
+            # Skip if abstract is too short
+            abstract = item.get('abstract', '')
+            if not abstract or len(abstract.strip()) < 100:
+                logger.debug(f"Skipping NYT story with insufficient abstract: {item.get('title', '')[:50]}")
+                return None
+            
             # Get image URL
             image_url = None
             multimedia = item.get('multimedia', [])
@@ -171,8 +178,8 @@ class NYTSource(NewsSource):
 
             return Article(
                 title=item.get('title', ''),
-                description=item.get('abstract', ''),
-                content=item.get('abstract', ''),
+                description=abstract,
+                content=abstract,  # NYT Top Stories don't provide full content via API
                 url=item.get('url', ''),
                 source=ArticleSource.NYT,
                 author=item.get('byline'),
@@ -198,6 +205,16 @@ class NYTSource(NewsSource):
             if not title:
                 logger.debug(f"NYT article has empty title")
                 return None
+            
+            # Check content - NYT search provides lead_paragraph and abstract
+            abstract = item.get('abstract', '')
+            lead_paragraph = item.get('lead_paragraph', '')
+            content = lead_paragraph or abstract
+            
+            # Require at least some substantive content
+            if not content or len(content.strip()) < 100:
+                logger.debug(f"Skipping NYT article with insufficient content: {title[:50]}")
+                return None
 
             byline = item.get('byline', {})
             if not isinstance(byline, dict):
@@ -217,8 +234,8 @@ class NYTSource(NewsSource):
 
             return Article(
                 title=title,
-                description=item.get('abstract', ''),
-                content=item.get('lead_paragraph', ''),
+                description=abstract,
+                content=content,
                 url=item.get('web_url', ''),
                 source=ArticleSource.NYT,
                 author=byline.get('original'),

@@ -1,0 +1,18 @@
+# Retail sales unexpectedly fall in Great Britain in run-up to Christmas
+
+**Source:** guardian
+**Published:** 2025-12-19 09:05:22 UTC
+**URL:** https://www.theguardian.com/business/2025/dec/19/retail-sales-unexpectedly-fall-in-great-britain-in-run-up-to-christmas
+**Author:** Mark Sweney
+**Categories:** Business
+**Keywords:** Retail industry, Black Friday, Business, Office for National Statistics, UK news, Supermarkets, Business Today (newsletter signup), Christmas, Article, News, Mark Sweney, UK Business
+
+![Article Image](https://media.guim.co.uk/5db14c9fb3ce4805e206d96aae7c8657e8e4a0de/394_12_3514_2813/500.jpg)
+
+## Summary
+
+Shoppers held back on Black Friday spending in November and budget uncertainty hit consumer confidence
+
+## Content
+
+Retail sales unexpectedly slumped in the crucial run-up to Christmas, as cash-strapped shoppers held back on Black Friday spending, and uncertainty before the budget dampened consumer confidence. Sales volumes in Great Britain fell 0.1% month on month in November, according to official figures from the Office for National Statistics (ONS). Economists had been expecting sales growth of 0.4% compared with October, fuelled by the annual Black Friday sales bonanza. The ONS said that its seasonally adjusted data – which takes into account that last year Black Friday fell into its December reporting period, instead of the usual November – showed that its impact on retail sales was “slightly weaker than usual”. “This year November’s Black Friday discounts did not boost sales as much as in some recent years,” said Hannah Finselbach, a senior statistician at the ONS. “Meanwhile, our separate household survey showed that although some people said they were planning to do more shopping this Black Friday than last, almost twice as many said they were planning to do less.” Sales at non-store retailers, primarily online retailers, dropped 2.9% month on month in November. Sales in Great Britain have fallen for two consecutive months in the crucial “golden quarter” for retailers in the run-up to Christmas. “Speculation around potential tax hikes and the wettest weather seen this year dampened retail sales in November,” said Jacqui Baker, the head of retail at RSM UK. “The drop in sales compounded a bleak start to the all-important golden quarter. “However, consumer confidence has ticked up in December, highlighting a potential budget bounce which will hopefully translate into a late surge in sales as people hit the high street in a last-minute rush.” The ONS revised October’s 1.1% sales slump to 0.9% and revised down the 0.8% growth recorded in September to 0.7%. Supermarket sales fell for the fourth consecutive month, down 0.5% month on month, while online jewellery sales also suffered. Non-food stores – the total of department stores, clothing, household and other non-food retailers – rose 1% month on month. Department stores, footwear and leather goods retailers reported an increase in sales. “After a dip last month, retailers will be disappointed to see sales fall again in November, especially given the significance of Black Friday in the industry calendar,” said Deann Evans, the managing director for the European region at Shopify. “The blow is heightened further following what were encouraging signs and positive sentiment in the lead-up to Black Friday weekend.” On Friday, the UK financial watchdog confirmed that the £100 limit on contactless card purchases was to be lifted from March. The Financial Conduct Authority said banks and card providers would be given the power to set their own limits on how much shoppers will be able to spend in a single payment without having to insert their card and use a four-digit pin.

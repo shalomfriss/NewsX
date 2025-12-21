@@ -1,0 +1,53 @@
+# New poll paints a grim picture of a nation under financial strain
+
+**Source:** politico
+**Published:** 2025-12-10 10:55:00 UTC
+**URL:** https://www.politico.com/news/2025/12/10/poll-affordability-cost-of-living-00678076
+**Author:** By Erin Doherty
+**Categories:** Politics
+
+![Article Image](https://static.politico.com/dc/e1/7bb163394b428997b02f72c852f1/affordability-roundup.png)
+
+## Summary
+
+Rising costs are crushing Americans — and they're running out of room to adjust.
+
+## Content
+
+<p>Americans are struggling with affordability pressures that are squeezing everything from their everyday necessities to their biggest-ticket expenses.</p> 
+<p>Nearly half of Americans said they find groceries, utility bills, health care, housing and transportation difficult to afford, <a href="https://www.politico.com/f/?id=0000019b-0a15-d5ec-abbb-da97ce7a0000" target="_blank">according to The POLITICO Poll</a> conducted last month by Public First. The results paint a grim portrait of spending constraints: More than a quarter, 27 percent, said they have skipped a medical check-up because of costs within the last two years, and 23 percent said they have skipped a prescription dose for the same reason.</p> 
+<p>The strain is also reshaping how Americans spend their free time. More than a third — 37 percent — said they could not afford to attend a professional sports event with their family or friends, and almost half — 46 percent — said they could not pay for a vacation that involves air travel.</p> 
+<p>While President Donald Trump gave himself an “A-plus-plus-plus-plus-plus” grade on the economy during an <a href="https://www.politico.com/news/2025/12/09/donald-trump-full-interview-transcript-00681693?amp;nname=playbook&amp;amp;nrid=00000168-ddbb-d450-a7e9-fdbfac350000&amp;nid=0000014f-1646-d88f-a1cf-5f46b7bd0000" target="_blank">exclusive interview</a> with POLITICO’s Dasha Burns, the poll results underscore that voters’ financial anxieties have <a href="https://www.politico.com/news/2025/12/04/poll-americans-trump-voters-affordability-crisis-00674747?nid=0000014f-1646-d88f-a1cf-5f46b4be0000&amp;nname=inside-congress&amp;nrid=0000015a-d271-ddbe-a55a-d6770a470000&amp;orgid=756&amp;uniquet=vjmpEOsQvIeM0oJsD61kEg&amp;utm_att1=" target="_blank">become deeply intertwined with their politics</a>, shaping how they evaluate the White House’s response to rising costs.<br /></p><p>Trump insists that “prices are all coming down,” as he told Burns, but the results pose a challenge for Trump and the Republican Party ahead of the 2026 midterms, with even some of the president’s own voters showing signs that their patience with high costs is wearing thin.</p> 
+<p>POLITICO reporters covering a variety of beats have spent the past few weeks poring over the poll results. We asked some of them to unpack the data for us and tell us what stood out most. Here’s what they said:</p> 
+<h4 class="story-text__heading-large">TARIFFS</h4> 
+<p><b>The big observation: </b>Trump has struggled to persuade even parts of his base to accept the idea that tariffs will pay off over time. A minority — 36 percent — of Trump voters said tariffs are hurting the economy now but will benefit the U.S. over time.</p> 
+<p>Even fewer said the strategy is already working: 22 percent of voters who cast their ballots for Trump in 2024 said tariffs are helping the U.S. economy both now and in the long term, according to the poll conducted in November.</p> 
+<p><b>What really stood out:</b> Staunch supporters of the president were roughly twice as likely as other Republicans to believe tariffs are a net positive already, although large shares of both groups still said they view them as harmful. Even people who self-identify as MAGA Republicans were split on one of the president’s favorite tools: 27 percent of those MAGA voters said tariffs are boosting the economy both now and in the long term, while 21 percent of them said tariffs are damaging in both the short and long term.</p> 
+<p><b>What now?</b> Tariffs represent more than an economic tool to the president, who argues the levies have helped him negotiate peace deals around the globe and nudged corporations to bring investment to American shores.</p> 
+<p>Trump has frequently urged Americans to be patient with his tariff strategy, much of which could be cut down by the Supreme Court in the coming months, but it remains a delicate political issue when a lot of voters may be more concerned about their everyday expenses rather than a broader global calculus.</p> 
+<p><i>– Ari Hawkins</i></p> 
+<h4 class="story-text__heading-large">COLLEGE COSTS</h4> 
+<p><b>The big observation:</b> The tuition is too damn high. Only a quarter of Americans think college is worth the money, regardless of party, The POLITICO Poll found. Overall, 62 percent of Americans said college isn’t worth it because it either costs too much or doesn’t provide enough benefits — a belief supported most by 18- to 24-year-olds and those aged 65 and up.</p> 
+<p>The income gap between Americans with college degrees and those with high school degrees widened over the last two decades. And recent research from the U.S. Census Bureau found the median income of households headed by someone with a bachelor’s degree or higher last year was more than double the median income of those with householders with a high school degree but no college.</p> 
+<p><b>What really stood out:</b> Despite that economic divide, more than half of people surveyed who graduated from college supported the idea that higher education is either too expensive or not sufficiently useful.</p> 
+<p><b>What now?</b> Both former President Joe Biden and Trump have tried to respond to this frustration, pitching efforts to boost technical education programs and federal support for professional degrees in lieu of 4-year universities.</p> 
+<p>The Trump administration has pressed universities to control their costs — attempting to tie those efforts to the schools’ access to federal funds — but also shed the student loan forgiveness programs Biden championed.</p> 
+<p><i>– Juan Perez Jr.&nbsp;</i></p> 
+<h4 class="story-text__heading-large">FOOD PRICES</h4> 
+<p><b>The big observation: </b>Trump attributed his 2024 victory over Biden partly to his pledge to bring down the cost of everyday goods like eggs. But a year later, Americans are more worried about being able to afford groceries than the rising cost of housing or health care, according to The POLITICO Poll.</p> 
+<p>Half of those surveyed said they find it difficult to pay for food. And a majority, 55 percent, blame the Trump administration for the high prices — even as the White House emphasizes its focus on affordability and the economy ahead of the midterm.</p> 
+<p><b>What really stood out:</b> As affordability increasingly becomes a political flashpoint, with Democrats eager to seize on GOP vulnerabilities, a meaningful share of Trump’s own voters — 22 percent — blame the president for the high grocery costs.</p> 
+<p><b>What now?</b> Balancing those concerns with a president who has put tariffs on goods imported from all over the world is a challenge for Trump’s administration — and an issue Democrats are certain to keep prodding.</p> 
+<p>– <i>Rachel Shin</i></p> 
+<h4 class="story-text__heading-large">HOUSING</h4> 
+<p><b>The big observation: </b>Concerns about housing costs — which have represented a major share of inflation in recent years — eclipsed those for health care, utilities, commuting expenses and child care, The POLITICO Poll found.</p> 
+<p>Only grocery costs bested the issue across more than a dozen expenses when respondents were asked to identify the items they find “the most challenging” to afford. The high cost of housing is also coming through in other metrics: The median age of first-time homebuyers climbed to a record high of 40 this year, according to the National Association of Realtors.</p> 
+<p><b>What really stood out: </b>The POLITICO Poll found that homebuying and rental costs were of particular concern for young and Hispanic adults, two constituencies whose support for Trump last year helped Republicans regain control of Washington. There’s also an interesting wrinkle among GOP voters. While only 10 percent of those who identified as MAGA Republicans believe the Trump administration is responsible for the housing costs they see as unfavorable (52 percent of them point to the Biden administration), that figure was three times higher for non-MAGA Republican respondents.</p> 
+<p><b>What now? </b>Those surveyed spread the blame for high housing costs across the Trump and Biden administrations, state and local governments and private landlords. But it's Republicans who have to protect their hold on Washington heading into the midterms while the president generally dismissed affordability this week as “a hoax that was started by Democrats.”</p> 
+<p><i>– Cassandra Dumay&nbsp;</i></p> 
+<h4 class="story-text__heading-large">HEALTH CARE COSTS</h4> 
+<p><b>The big observation: </b>Nearly half of American adults find it difficult to afford health care, according to The POLITICO Poll. Health care ranked as the No. 3 cost concern for respondents.</p> 
+<p>Democrats are pushing to extend pandemic-era enhanced Affordable Care Act premium tax credits, which are set to expire at the end of the year. If they end, prices will skyrocket for many Americans who buy insurance through the Obamacare marketplace. Democrats, who have struggled since Trump’s victory to coalesce around a campaign message, are banking on health care costs and other affordability concerns being a winning issue for them in the midterms.</p> 
+<p><b>What really stood out:</b> The divide between MAGA and non-MAGA. While 84 percent of people who identified as MAGA Republicans said they trusted the GOP to bring down the cost of health care for everyday Americans (7 percent of which actually trusted the Democratic Party more on this issue), 49 percent of non-MAGA Republicans felt the same way. And nearly a quarter — 24 percent — of the non-MAGA respondents put their faith in Democrats on this issue.</p> 
+<p><b>What now?</b> While poll respondents overall said they were more likely to trust Democrats to bring down health care costs, the overall split may not be concerning to Republicans running for reelection: 42 percent favored Democrats on the issue, compared with 33 percent favoring Republicans. The question becomes whether the non-MAGA Republicans can be persuaded to break ranks, or undecided voters are wooed.</p> 
+<p><i>– Sophie Gardner&nbsp;</i><br /></p>

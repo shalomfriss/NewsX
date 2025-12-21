@@ -111,6 +111,14 @@ class GuardianSource(NewsSource):
         try:
             fields = item.get('fields', {})
             tags = item.get('tags', [])
+            
+            # Check content length - skip if insufficient
+            content = fields.get('bodyText', '')
+            
+            # Require at least 200 characters of content
+            if not content or len(content.strip()) < 200:
+                logger.debug(f"Skipping Guardian article with insufficient content: {item.get('webTitle', '')[:50]}")
+                return None
 
             # Extract keywords from tags
             keywords = [tag.get('webTitle', '') for tag in tags if tag.get('webTitle')]
@@ -118,7 +126,7 @@ class GuardianSource(NewsSource):
             return Article(
                 title=item.get('webTitle', ''),
                 description=fields.get('trailText') or fields.get('standfirst'),
-                content=fields.get('bodyText'),
+                content=content,
                 url=item.get('webUrl', ''),
                 source=ArticleSource.GUARDIAN,
                 author=fields.get('byline'),

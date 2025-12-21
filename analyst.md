@@ -250,7 +250,7 @@ Ensure every section is filled.
 
 
 Never add personal opinions, speculation, or unverified claims.
-   5. Create a script that will input all the analyses into Supabase databases with these schemas.  Make sure to gather all the categories first and insert them into the categories table after clearing it out.  Then make sure to add the stories with the right category id. 
+   5. Create a script that will input all the analyses into Supabase databases with these schemas.  Make sure to gather all the categories first and insert them into the categories table after clearing it out.  Then make sure to add the stories with the right category id. Make is a SQL script not a python script
 
 create table public.stories (
   summary text null,

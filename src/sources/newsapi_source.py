@@ -123,11 +123,26 @@ class NewsAPISource(NewsSource):
             # Skip removed articles
             if '[Removed]' in str(item.get('title', '')):
                 return None
+            
+            # Check content length - skip if insufficient
+            content = item.get('content', '')
+            description = item.get('description', '')
+            
+            # Require at least 200 characters of content
+            if not content or len(content.strip()) < 200:
+                logger.debug(f"Skipping article with insufficient content: {item.get('title', '')[:50]}")
+                return None
+            
+            # Check if content is just a truncated summary (NewsAPI truncates at 200 chars)
+            # If content ends with [...] or [+chars], it's truncated and we should skip
+            if content and ('[+' in content or content.strip().endswith('[...]')):
+                logger.debug(f"Skipping truncated article: {item.get('title', '')[:50]}")
+                return None
 
             return Article(
                 title=item['title'],
-                description=item.get('description'),
-                content=item.get('content'),
+                description=description,
+                content=content,
                 url=item['url'],
                 source=ArticleSource.NEWSAPI,
                 author=item.get('author'),

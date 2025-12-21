@@ -311,9 +311,25 @@ class RSSSource(NewsSource):
                     pass
             
             # Skip articles without meaningful content
-            if not content or len(content.strip()) < 100:
-                logger.debug(f"Skipping article with insufficient content: {title[:50]}")
+            # Require at least 200 characters of actual content
+            if not content or len(content.strip()) < 200:
+                logger.debug(f"Skipping article with insufficient content ({len(content.strip()) if content else 0} chars): {title[:50]}")
                 return None
+            
+            # Check if content is just a duplicate of the summary/description
+            # This catches articles that only have a brief summary
+            if content and description:
+                # If content is nearly identical to description (within 20% difference)
+                content_words = set(content.lower().split())
+                desc_words = set(description.lower().split())
+                
+                if len(content_words) > 0:
+                    overlap = len(content_words & desc_words) / len(content_words)
+                    
+                    # If >80% overlap and content is short, it's likely just a summary
+                    if overlap > 0.8 and len(content.split()) < 50:
+                        logger.debug(f"Skipping article with summary-only content: {title[:50]}")
+                        return None
 
             # Extract author
             author = entry.get('author') or entry.get('dc:creator')

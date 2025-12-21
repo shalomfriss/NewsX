@@ -1,0 +1,18 @@
+# Minister says government not mistreating Palestine Action activists on hunger strike
+
+**Source:** guardian
+**Published:** 2025-12-18 19:46:25 UTC
+**URL:** https://www.theguardian.com/uk-news/2025/dec/18/minister-government-palestine-action-hunger-strike
+**Author:** Nadeem Badshah
+**Categories:** UK news
+**Keywords:** UK news, Article, News, Nadeem Badshah, The Guardian, Main section, UK news, UK Home News
+
+![Article Image](https://media.guim.co.uk/994ba4d51d88f254e0e07bc726cc649a265dee3f/250_0_2500_2000/500.jpg)
+
+## Summary
+
+Commons leader denies allegation and says government ‘not trying to break bodies’ after doctor said prisoners were dying
+
+## Content
+
+The government is “not trying to break the bodies” of Palestine Action protesters on hunger strike, a minister has said, after a doctor said eight of the activists were dying. The prisoners on hunger strike are facing charges related to alleged break-ins or criminal damage on behalf of Palestine Action before the group was banned under terrorism legislation in July, charges which they deny and have called to be dropped. On Thursday, two of the group reached day 47 of their protest while a third is on day 46. The Commons leader, Sir Alan Campbell, was responding to Adnan Hussain, the independent MP for Blackburn, who said during Thursday’s Christmas adjournment debate: “Remand is not punishment. It is not meant to break bodies or silence dissent. “Yet we are witnessing conditions so severe that these young people feel driven to risk death simply to be heard.” Campbell said the allegation “couldn’t be further from the truth”. Dr James Smith, a qualified emergency physician who is a lecturer at University College London, told a press conference on Thursday that some of the prisoners on hunger strikes were dying. A group of 51 MPs and peers wrote to the justice secretary, David Lammy, urging him to meet the lawyers of the eight prisoners. Jeremy Corbyn, the independent MP and former Labour leader, told the Commons the group had not been given a “substantive reply from the Ministry of Justice”. He said: “I would hope that in hearing this debate, they will recognise they have a responsibility for the welfare, the medical condition and the way in which prisoners are supported in every one of our prisons, that includes people who are taking protest action.” Campbell said: “The welfare and the wellbeing of prisoners, whether they’re on hunger strike or not, are absolutely central to the prison service and to ministers’ minds. And it is really important that we appreciate that the deputy prime minister does take a keen interest in what is happening and hope that we can find a suitable outcome for this. “And I also have to say very gently, it couldn’t be further from the truth for anyone in this House or indeed outside to suggest that somehow the government or the prison service is trying to ‘break the bodies’ of the people that are on hunger strike. “We want to find a settlement to this and I give a commitment to take back to the deputy prime minister what has been said here today and hopefully we can find a suitable way forward.” The prisons minister, Lord Timpson, said: “We are very experienced at dealing with hunger strikes. Unfortunately, over the last five years we have averaged over 200 hunger strike incidents every year and the processes that we have are well-established and they work very well – with prisons working alongside our NHS partners every day, making sure our systems are robust and working – and they are.”

@@ -14,12 +14,12 @@ logger = logging.getLogger(__name__)
 class ContentScraper:
     """Scrapes full article content from URLs."""
     
-    def __init__(self, timeout: int = 10):
+    def __init__(self, timeout: int = 5):
         """
         Initialize content scraper.
         
         Args:
-            timeout: Request timeout in seconds
+            timeout: Request timeout in seconds (reduced to 5 for faster failure)
         """
         self.timeout = timeout
         self.session = requests.Session()
@@ -38,17 +38,11 @@ class ContentScraper:
             Article content or None if fetch fails
         """
         try:
-            # Try newspaper3k first (best for news articles) with timeout
-            article = NewspaperArticle(url)
-            article.config.browser_user_agent = self.session.headers['User-Agent']
-            article.config.request_timeout = self.timeout
-            article.download()
-            article.parse()
+            # Skip if URL is None or empty
+            if not url:
+                return None
             
-            if article.text and len(article.text.strip()) > 100:
-                return article.text.strip()
-            
-            # Fallback to BeautifulSoup
+            # Try BeautifulSoup first (faster and more reliable than newspaper3k)
             response = self.session.get(url, timeout=self.timeout)
             response.raise_for_status()
             
@@ -73,20 +67,26 @@ class ContentScraper:
                 content_elem = soup.select_one(selector)
                 if content_elem:
                     text = content_elem.get_text(separator='\n', strip=True)
-                    if len(text) > 100:
+                    if len(text) > 200:
                         return text
             
-            # Last resort: get all paragraph text
+            # Fallback: get all paragraph text
             paragraphs = soup.find_all('p')
             if paragraphs:
                 text = '\n\n'.join(p.get_text(strip=True) for p in paragraphs if p.get_text(strip=True))
-                if len(text) > 100:
+                if len(text) > 200:
                     return text
             
             return None
             
+        except requests.Timeout:
+            logger.debug(f"Timeout scraping {url[:50]}")
+            return None
+        except requests.RequestException as e:
+            logger.debug(f"Request error scraping {url[:50]}: {str(e)[:30]}")
+            return None
         except Exception as e:
-            logger.debug(f"Failed to scrape {url}: {str(e)[:50]}")
+            logger.debug(f"Failed to scrape {url[:50]}: {str(e)[:50]}")
             return None
     
     def close(self):
