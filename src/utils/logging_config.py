@@ -60,6 +60,9 @@ def setup_logging(
     logging.getLogger("requests").setLevel(logging.WARNING)
     logging.getLogger("sqlalchemy").setLevel(logging.WARNING)
     logging.getLogger("feedparser").setLevel(logging.WARNING)
+    logging.getLogger("newspaper").setLevel(logging.ERROR)
+    logging.getLogger("chardet").setLevel(logging.WARNING)
+    logging.getLogger("filelock").setLevel(logging.WARNING)
 
     logger = logging.getLogger(__name__)
     logger.info(f"Logging configured at {log_level} level")

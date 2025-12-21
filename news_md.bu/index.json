@@ -1,0 +1,930 @@
+{
+  "5929d6fd00322c1c0a75544430b6abdf": {
+    "url": "https://www.dw.com/en/us-strikes-on-vessels-in-eastern-pacific-kill-8/a-75172131",
+    "title": "US strikes on vessels in eastern Pacific kill 8",
+    "source": "newsapi",
+    "published_at": "2025-12-16T05:31:00",
+    "fetched_at": "2025-12-17T05:32:29.531121",
+    "filepath": "newsapi/20251216_053100_newsapi_US-strikes-on-vessels-in-eastern-Pacific-kill-8.md"
+  },
+  "846e553c3fbc48a9c4fb42bef4a05e35": {
+    "url": "https://variety.com/2025/tv/news/jimmy-kimmel-slams-trump-rob-reiner-derangement-syndrome-1236609673/",
+    "title": "Jimmy Kimmel Slams Donald Trump as \u2018Hateful and Vile\u2019 For Saying Rob Reiner Had \u2018Trump Derangement Syndrome\u2019: \u2018That Corroded Brain Is in Charge of Our Lives\u2019",
+    "source": "newsapi",
+    "published_at": "2025-12-16T05:30:32",
+    "fetched_at": "2025-12-17T05:32:29.531158",
+    "filepath": "newsapi/20251216_053032_newsapi_Jimmy-Kimmel-Slams-Donald-Trump-as-Hateful-and-Vile-For-Saying-Rob-Reiner-Had-Trump-Derangement-Synd.md"
+  },
+  "d127e23b780939be9d8f8467336f4233": {
+    "url": "https://english.gossiplankanews.com/2025/12/transport-board-offers-relief-to-school.html",
+    "title": "Transport Board Offers Relief to School Students Throughout December",
+    "source": "newsapi",
+    "published_at": "2025-12-16T05:30:19",
+    "fetched_at": "2025-12-17T05:32:29.531179",
+    "filepath": "newsapi/20251216_053019_newsapi_Transport-Board-Offers-Relief-to-School-Students-Throughout-December.md"
+  },
+  "162d8d859665e834ffd104a2a54f68f2": {
+    "url": "https://biztoc.com/x/9326405018a9e0cf",
+    "title": "Trump Casts Fentanyl As Weapon Of Mass Destruction In New Executive Order: 'No Bomb Does What This Is Doing'",
+    "source": "newsapi",
+    "published_at": "2025-12-16T05:30:04",
+    "fetched_at": "2025-12-17T05:32:29.531192",
+    "filepath": "newsapi/20251216_053004_newsapi_Trump-Casts-Fentanyl-As-Weapon-Of-Mass-Destruction-In-New-Executive-Order-No-Bomb-Does-What-This-Is-.md"
+  },
+  "4ab2ea004169d95791b63a9e2d5e2bb6": {
+    "url": "https://www.hhhistory.com/2025/12/cost-of-perserverance-part-ii.html",
+    "title": "COST OF PERSERVERANCE (Part II)",
+    "source": "newsapi",
+    "published_at": "2025-12-16T05:30:00",
+    "fetched_at": "2025-12-17T05:32:29.531202",
+    "filepath": "newsapi/20251216_053000_newsapi_COST-OF-PERSERVERANCE-Part-II.md"
+  },
+  "3cd788ce5deeea0cc4cb4989ee5b7ce6": {
+    "url": "https://www.independent.ie/world-news/australasia/bondi-beach-gunman-was-investigated-over-links-to-islamic-state-terrorist-cell/a778774249.html",
+    "title": "Bondi Beach gunman was investigated over links to Islamic State terrorist cell",
+    "source": "newsapi",
+    "published_at": "2025-12-16T05:30:00",
+    "fetched_at": "2025-12-17T05:32:29.531216",
+    "filepath": "newsapi/20251216_053000_newsapi_Bondi-Beach-gunman-was-investigated-over-links-to-Islamic-State-terrorist-cell.md"
+  },
+  "1bf673298ec3ed858ef2d8c35b720269": {
+    "url": "https://www.independent.ie/business/irish/pre-tax-profits-at-giraffe-childcare-rise-by-5pc-to-44m/a758611993.html",
+    "title": "Pre-tax profits at Giraffe Childcare rise by 5pc to \u20ac4.4m",
+    "source": "newsapi",
+    "published_at": "2025-12-16T05:30:00",
+    "fetched_at": "2025-12-17T05:32:29.531227",
+    "filepath": "newsapi/20251216_053000_newsapi_Pre-tax-profits-at-Giraffe-Childcare-rise-by-5pc-to-44m.md"
+  },
+  "51ebf16410681ad6fc86ac436c0549c8": {
+    "url": "https://www.independent.ie/world-news/europe/russian-attack-submarine-disabled-in-strike-by-underwater-drones/a949783231.html",
+    "title": "Russian attack submarine disabled in strike by underwater drones",
+    "source": "newsapi",
+    "published_at": "2025-12-16T05:30:00",
+    "fetched_at": "2025-12-17T05:32:29.531238",
+    "filepath": "newsapi/20251216_053000_newsapi_Russian-attack-submarine-disabled-in-strike-by-underwater-drones.md"
+  },
+  "26352114f7f329f17e5e84a7a201eb0f": {
+    "url": "https://www.independent.ie/irish-news/government-accused-of-ditching-promise-to-lower-income-tax/a1567058310.html",
+    "title": "Government accused of ditching promise to lower income tax",
+    "source": "newsapi",
+    "published_at": "2025-12-16T05:30:00",
+    "fetched_at": "2025-12-17T05:32:29.531248",
+    "filepath": "newsapi/20251216_053000_newsapi_Government-accused-of-ditching-promise-to-lower-income-tax.md"
+  },
+  "54ae452eae42b4a68549938ccd3726df": {
+    "url": "https://www.theguardian.com/us-news/live/2025/dec/16/trump-hegseth-rubio-politics-live-updates",
+    "title": "Trump\u2019s chief of staff suggests real goal of US boat strikes is to topple Venezuela\u2019s Maduro \u2013 as it happened",
+    "source": "guardian",
+    "published_at": "2025-12-17T02:47:23",
+    "fetched_at": "2025-12-17T05:32:29.987585",
+    "filepath": "guardian/20251217_024723_guardian_Trumps-chief-of-staff-suggests-real-goal-of-US-boat-strikes-is-to-topple-Venezuelas-Maduro-as-it-hap.md"
+  },
+  "a324abfb9a480f27b337a8c9701a85bf": {
+    "url": "https://www.theguardian.com/us-news/2025/dec/17/trump-administration-latest-news-updates",
+    "title": "Trump news at a glance: president ratchets up pressure on Maduro with oil tanker blockade",
+    "source": "guardian",
+    "published_at": "2025-12-17T02:23:58",
+    "fetched_at": "2025-12-17T05:32:29.987612",
+    "filepath": "guardian/20251217_022358_guardian_Trump-news-at-a-glance-president-ratchets-up-pressure-on-Maduro-with-oil-tanker-blockade.md"
+  },
+  "71de6d757ed4e6b30ed0826ee1b4e9f0": {
+    "url": "https://www.theguardian.com/uk-news/2025/dec/17/government-invests-120m-to-save-uks-last-ethylene-plant",
+    "title": "Government invests \u00a3120m to save UK\u2019s last ethylene plant ",
+    "source": "guardian",
+    "published_at": "2025-12-17T00:01:18",
+    "fetched_at": "2025-12-17T05:32:29.987627",
+    "filepath": "guardian/20251217_000118_guardian_Government-invests-120m-to-save-UKs-last-ethylene-plant-.md"
+  },
+  "65550501b2efbe38bde2845cf2542769": {
+    "url": "https://www.theguardian.com/world/2025/dec/16/uk-inquiry-foreign-financial-interference-domestic-politics",
+    "title": "UK to hold inquiry into foreign financial interference in domestic politics",
+    "source": "guardian",
+    "published_at": "2025-12-16T19:52:27",
+    "fetched_at": "2025-12-17T05:32:29.987639",
+    "filepath": "guardian/20251216_195227_guardian_UK-to-hold-inquiry-into-foreign-financial-interference-in-domestic-politics.md"
+  },
+  "4ccc3402d0962642347b8df2df5b8a04": {
+    "url": "https://www.theguardian.com/us-news/2025/dec/16/susie-wiles-trump-interview",
+    "title": "Trump\u2019s chief of staff says he believes \u2018there\u2019s nothing he can\u2019t do\u2019 as president",
+    "source": "guardian",
+    "published_at": "2025-12-16T19:14:45",
+    "fetched_at": "2025-12-17T05:32:29.987650",
+    "filepath": "guardian/20251216_191445_guardian_Trumps-chief-of-staff-says-he-believes-theres-nothing-he-cant-do-as-president.md"
+  },
+  "1cd8caf824f77f2919ba2a053bcc6d30": {
+    "url": "https://www.theguardian.com/commentisfree/2025/dec/16/the-guardian-view-on-trumps-bbc-lawsuit-grievance-politics-with-a-purpose",
+    "title": "The Guardian view on Trump\u2019s BBC lawsuit: grievance politics with a purpose | Editorial",
+    "source": "guardian",
+    "published_at": "2025-12-16T19:04:15",
+    "fetched_at": "2025-12-17T05:32:29.987661",
+    "filepath": "guardian/20251216_190415_guardian_The-Guardian-view-on-Trumps-BBC-lawsuit-grievance-politics-with-a-purpose-Editorial.md"
+  },
+  "2b5bfb6fee1721a1099e82bdb2e074a8": {
+    "url": "https://www.theguardian.com/culture/2025/dec/16/arts-funding-england-protected-politics-hodge-report",
+    "title": "Arts funding in England must be protected from politics, Hodge report urges",
+    "source": "guardian",
+    "published_at": "2025-12-16T18:41:10",
+    "fetched_at": "2025-12-17T05:32:29.987671",
+    "filepath": "guardian/20251216_184110_guardian_Arts-funding-in-England-must-be-protected-from-politics-Hodge-report-urges.md"
+  },
+  "6d8236ce357d92ce43b9e42ed09c22b6": {
+    "url": "https://www.theguardian.com/us-news/2025/dec/16/donald-trump-and-the-goldwater-rule",
+    "title": "Donald Trump and the Goldwater rule | Letter",
+    "source": "guardian",
+    "published_at": "2025-12-16T18:00:57",
+    "fetched_at": "2025-12-17T05:32:29.987681",
+    "filepath": "guardian/20251216_180057_guardian_Donald-Trump-and-the-Goldwater-rule-Letter.md"
+  },
+  "9a321ddcb631d9b9bead7f1ef8a1c4a0": {
+    "url": "https://www.theguardian.com/politics/2025/dec/16/ministers-weaken-biodiversity-planning-rule-nature-england",
+    "title": "Ministers \u2018break word\u2019 on protecting nature after weakening biodiversity planning rule",
+    "source": "guardian",
+    "published_at": "2025-12-16T17:54:35",
+    "fetched_at": "2025-12-17T05:32:29.987692",
+    "filepath": "guardian/20251216_175435_guardian_Ministers-break-word-on-protecting-nature-after-weakening-biodiversity-planning-rule.md"
+  },
+  "04b480308ce2a171b4668d743e373778": {
+    "url": "https://www.theguardian.com/politics/live/2025/dec/16/donald-trump-bbc-lawsuit-keir-starmer-kemi-badenoch-reaction-latest-news-updates",
+    "title": "UK politics: Employment rights bill set to become law after Lords backing \u2013 as it happened",
+    "source": "guardian",
+    "published_at": "2025-12-16T17:43:17",
+    "fetched_at": "2025-12-17T05:32:29.987702",
+    "filepath": "guardian/20251216_174317_guardian_UK-politics-Employment-rights-bill-set-to-become-law-after-Lords-backing-as-it-happened.md"
+  },
+  "e23294b3128ff8fe93499ed418e8226f": {
+    "url": "https://thehill.com/homenews/campaign/5652308-marjorie-greene-trump-influence/",
+    "title": "Greene says \u2018dam is breaking\u2019 on Trump\u2019s influence on GOP",
+    "source": "the_hill",
+    "published_at": "2025-12-17T04:03:10",
+    "fetched_at": "2025-12-17T05:32:31.538812",
+    "filepath": "the_hill/20251217_040310_the_hill_Greene-says-dam-is-breaking-on-Trumps-influence-on-GOP.md"
+  },
+  "cd1d6b62e5ecd75b2ed7aa1b2c923230": {
+    "url": "https://thehill.com/policy/defense/5652277-aoc-criticizes-drug-boat-intel/",
+    "title": "Ocasio Cortez blasts boat strike briefings: 'That was a joke'",
+    "source": "the_hill",
+    "published_at": "2025-12-17T02:49:58",
+    "fetched_at": "2025-12-17T05:32:31.683500",
+    "filepath": "the_hill/20251217_024958_the_hill_Ocasio-Cortez-blasts-boat-strike-briefings-That-was-a-joke.md"
+  },
+  "81a670d4cb1b8de9adaa001d736f2842": {
+    "url": "https://thehill.com/homenews/house/5652266-aca-subsidies-expiration-premium-spike/",
+    "title": "House won't vote on ObamaCare amendments after heated committee meeting",
+    "source": "the_hill",
+    "published_at": "2025-12-17T02:06:59",
+    "fetched_at": "2025-12-17T05:32:31.787311",
+    "filepath": "the_hill/20251217_020659_the_hill_House-wont-vote-on-ObamaCare-amendments-after-heated-committee-meeting.md"
+  },
+  "6866575f6b6b407e4eec2b5b674f1ec5": {
+    "url": "https://thehill.com/homenews/administration/5652157-trump-venezuela-blockade-regime-terrorist/",
+    "title": "Trump labels Maduro regime terrorist organization, orders blockade of sanctioned oil tankers",
+    "source": "the_hill",
+    "published_at": "2025-12-17T00:24:31",
+    "fetched_at": "2025-12-17T05:32:32.229542",
+    "filepath": "the_hill/20251217_002431_the_hill_Trump-labels-Maduro-regime-terrorist-organization-orders-blockade-of-sanctioned-oil-tankers.md"
+  },
+  "eb3722508ce9a59df1e55ea2e7e55756": {
+    "url": "https://thehill.com/homenews/administration/5652097-minnesota-snap-recertification-required/",
+    "title": "Rollins threatens Minnesota's SNAP benefits under new 'pilot program'",
+    "source": "the_hill",
+    "published_at": "2025-12-17T00:15:56",
+    "fetched_at": "2025-12-17T05:32:32.329237",
+    "filepath": "the_hill/20251217_001556_the_hill_Rollins-threatens-Minnesotas-SNAP-benefits-under-new-pilot-program.md"
+  },
+  "a21b42e74e106bbd6e600e5f3489cc24": {
+    "url": "https://thehill.com/policy/defense/5651908-democrats-hegseth-strike-video-release/",
+    "title": "Hegseth, Democrats battle over Sept. 2 boat strike video release",
+    "source": "the_hill",
+    "published_at": "2025-12-16T22:26:17",
+    "fetched_at": "2025-12-17T05:32:32.585173",
+    "filepath": "the_hill/20251216_222617_the_hill_Hegseth-Democrats-battle-over-Sept-2-boat-strike-video-release.md"
+  },
+  "ddbb7a5fb0216b868587f8af5f070de2": {
+    "url": "https://thehill.com/homenews/senate/5651822-trump-administration-strikes-questioned/",
+    "title": "Sen. Chris Murphy after boat strike briefing: There's 'no fentanyl' and 'no legal justification'",
+    "source": "the_hill",
+    "published_at": "2025-12-16T22:11:58",
+    "fetched_at": "2025-12-17T05:32:32.678098",
+    "filepath": "the_hill/20251216_221158_the_hill_Sen-Chris-Murphy-after-boat-strike-briefing-Theres-no-fentanyl-and-no-legal-justification.md"
+  },
+  "2a8a1ea19b70d16e148812821110fe9f": {
+    "url": "https://thehill.com/homenews/senate/5651719-pentagon-withholds-venezuela-strike-video/",
+    "title": "Graham: Hegseth should release full video of Sept. 2 strike on survivors",
+    "source": "the_hill",
+    "published_at": "2025-12-16T20:29:14",
+    "fetched_at": "2025-12-17T05:32:32.782721",
+    "filepath": "the_hill/20251216_202914_the_hill_Graham-Hegseth-should-release-full-video-of-Sept-2-strike-on-survivors.md"
+  },
+  "218ffc44e9639f9692034254fdf9f185": {
+    "url": "https://www.theatlantic.com/politics/2025/12/trump-susie-wiles-white-house/685287/?utm_source=feed",
+    "title": "Trump Still Needs Susie Wiles",
+    "source": "the_atlantic",
+    "published_at": "2025-12-17T01:15:00",
+    "fetched_at": "2025-12-17T05:32:31.531816",
+    "filepath": "the_atlantic/20251217_011500_the_atlantic_Trump-Still-Needs-Susie-Wiles.md"
+  },
+  "ce3507ed96775b91d52dff76a787c70d": {
+    "url": "https://www.theatlantic.com/newsletters/2025/12/fentanyl-new-weapon-of-mass-destruction/685288/?utm_source=feed",
+    "title": "The New \u2018Weapon of Mass Destruction\u2019",
+    "source": "the_atlantic",
+    "published_at": "2025-12-17T00:14:00",
+    "fetched_at": "2025-12-17T05:32:31.827876",
+    "filepath": "the_atlantic/20251217_001400_the_atlantic_The-New-Weapon-of-Mass-Destruction.md"
+  },
+  "828f24d788c4043450ae09309d1b21e9": {
+    "url": "https://www.theatlantic.com/newsletters/2025/12/daily-trivia-questions-answers-week-12/685286/?utm_source=feed",
+    "title": "Today\u2019s <em>Atlantic </em>Trivia: Unto the Breach",
+    "source": "the_atlantic",
+    "published_at": "2025-12-16T22:26:57",
+    "fetched_at": "2025-12-17T05:32:32.014877",
+    "filepath": "the_atlantic/20251216_222657_the_atlantic_Todays-emAtlantic-emTrivia-Unto-the-Breach.md"
+  },
+  "33fc8b74314f8d58d2f1871a271856ba": {
+    "url": "https://www.theatlantic.com/family/2025/12/commute-gender-wage-gap-mothers/685265/?utm_source=feed",
+    "title": "\u2018Commuting Is Bad\u2019\u2014Particularly for Women",
+    "source": "the_atlantic",
+    "published_at": "2025-12-16T21:34:00",
+    "fetched_at": "2025-12-17T05:32:32.272560",
+    "filepath": "the_atlantic/20251216_213400_the_atlantic_Commuting-Is-BadParticularly-for-Women.md"
+  },
+  "458688327050b4e9444f42cc97174862": {
+    "url": "https://www.theatlantic.com/politics/2025/12/trump-rob-reiner/685280/?utm_source=feed",
+    "title": "Trump\u2019s Inferno of Hate Is Intensifying",
+    "source": "the_atlantic",
+    "published_at": "2025-12-16T20:31:42",
+    "fetched_at": "2025-12-17T05:32:32.701849",
+    "filepath": "the_atlantic/20251216_203142_the_atlantic_Trumps-Inferno-of-Hate-Is-Intensifying.md"
+  },
+  "bc9c834fffd8d4ac9c586016f07d5d1b": {
+    "url": "https://www.theatlantic.com/politics/2025/12/real-revelation-susie-wiles-interviews/685281/?utm_source=feed",
+    "title": "Susie Wiles Gets in Trouble for Saying What Everyone Knows",
+    "source": "the_atlantic",
+    "published_at": "2025-12-16T20:00:00",
+    "fetched_at": "2025-12-17T05:32:33.804447",
+    "filepath": "the_atlantic/20251216_200000_the_atlantic_Susie-Wiles-Gets-in-Trouble-for-Saying-What-Everyone-Knows.md"
+  },
+  "e1d77e1f38da4f7e3b28b8434651812e": {
+    "url": "https://www.theatlantic.com/politics/2025/12/tina-peters-maga-colorado-trump-pardon/685240/?utm_source=feed",
+    "title": "The Last MAGA Prisoner",
+    "source": "the_atlantic",
+    "published_at": "2025-12-12T22:27:53",
+    "fetched_at": "2025-12-17T05:32:34.160463",
+    "filepath": "the_atlantic/20251212_222753_the_atlantic_The-Last-MAGA-Prisoner.md"
+  },
+  "6e92391f4aa2a507b4030f6e564f65ba": {
+    "url": "https://www.theatlantic.com/politics/2025/12/trump-affordability-message/685236/?utm_source=feed",
+    "title": "Trump\u2019s Affordability Weave",
+    "source": "the_atlantic",
+    "published_at": "2025-12-12T17:30:47",
+    "fetched_at": "2025-12-17T05:32:34.370485",
+    "filepath": "the_atlantic/20251212_173047_the_atlantic_Trumps-Affordability-Weave.md"
+  },
+  "89ee90243af9e5d0bafecf9e2a1129c5": {
+    "url": "https://www.propublica.org/article/fair-food-program-farmworker-abuse-exploitation",
+    "title": "Farmworkers Are Frequently Exploited. But Few Farms Participate in a Program That Experts Say Could Prevent Abuse.",
+    "source": "propublica",
+    "published_at": "2025-12-16T10:30:00",
+    "fetched_at": "2025-12-17T05:32:31.903130",
+    "filepath": "propublica/20251216_103000_propublica_Farmworkers-Are-Frequently-Exploited-But-Few-Farms-Participate-in-a-Program-That-Experts-Say-Could-P.md"
+  },
+  "444c724e9f15844fb0736a84c09efa6f": {
+    "url": "https://www.propublica.org/article/trump-dot-oil-gas-pipeline-ethics-questions-senator-cantwell",
+    "title": "Amid Trump\u2019s Proposed Pipeline Safety Rollbacks, Senator Questions Regulators\u2019 Industry Ties",
+    "source": "propublica",
+    "published_at": "2025-12-15T20:00:00",
+    "fetched_at": "2025-12-17T05:32:32.154722",
+    "filepath": "propublica/20251215_200000_propublica_Amid-Trumps-Proposed-Pipeline-Safety-Rollbacks-Senator-Questions-Regulators-Industry-Ties.md"
+  },
+  "52fe03f1cbba00d89b78e9c8526f5307": {
+    "url": "https://www.propublica.org/article/usaid-cholera-deaths-trump-humanitarian-aid-cuts-south-sudan",
+    "title": "Trump Officials Celebrated With Cake After Slashing Aid. Then People Died of Cholera.",
+    "source": "propublica",
+    "published_at": "2025-12-15T10:30:00",
+    "fetched_at": "2025-12-17T05:32:33.106214",
+    "filepath": "propublica/20251215_103000_propublica_Trump-Officials-Celebrated-With-Cake-After-Slashing-Aid-Then-People-Died-of-Cholera.md"
+  },
+  "ef2fcd18ea3c24cd625dc62982aaef21": {
+    "url": "https://www.propublica.org/article/immigrants-alabama-harsher-sentences-citizens",
+    "title": "Immigrants in Alabama Can Face Harsher Sentences Than Citizens for the Same Crimes",
+    "source": "propublica",
+    "published_at": "2025-12-15T10:00:00",
+    "fetched_at": "2025-12-17T05:32:33.355412",
+    "filepath": "propublica/20251215_100000_propublica_Immigrants-in-Alabama-Can-Face-Harsher-Sentences-Than-Citizens-for-the-Same-Crimes.md"
+  },
+  "d4b9617d77f753893d48bfea195a1cc6": {
+    "url": "https://www.propublica.org/article/fda-defective-device-recalls-gao-report",
+    "title": "The FDA Rarely Forces Manufacturers to Recall Dangerous Medical Devices, Watchdog Report Finds",
+    "source": "propublica",
+    "published_at": "2025-12-12T11:30:00",
+    "fetched_at": "2025-12-17T05:32:33.566833",
+    "filepath": "propublica/20251212_113000_propublica_The-FDA-Rarely-Forces-Manufacturers-to-Recall-Dangerous-Medical-Devices-Watchdog-Report-Finds.md"
+  },
+  "f92d43d844302b029e6ddd423c36bd95": {
+    "url": "https://www.propublica.org/article/utah-solar-energy-operation-gigawatt-spencer-cox",
+    "title": "Utah Leaders Are Hindering Efforts to Develop Solar Despite a Goal to Double the State\u2019s Energy Supply",
+    "source": "propublica",
+    "published_at": "2025-12-12T11:00:00",
+    "fetched_at": "2025-12-17T05:32:34.103663",
+    "filepath": "propublica/20251212_110000_propublica_Utah-Leaders-Are-Hindering-Efforts-to-Develop-Solar-Despite-a-Goal-to-Double-the-States-Energy-Suppl.md"
+  },
+  "62e00dcc4363476b94acb154928fa162": {
+    "url": "https://www.propublica.org/article/sb8a-native-hawaiian-republican-senate-oversight",
+    "title": "Senator Demands Federal Agencies Halt Small Business Contracts, Citing Investigation of Native Hawaiian Firm",
+    "source": "propublica",
+    "published_at": "2025-12-12T10:30:00",
+    "fetched_at": "2025-12-17T05:32:34.401523",
+    "filepath": "propublica/20251212_103000_propublica_Senator-Demands-Federal-Agencies-Halt-Small-Business-Contracts-Citing-Investigation-of-Native-Hawaii.md"
+  },
+  "5db5414200a8b42ff6e9bb8d2d5bd99c": {
+    "url": "https://www.propublica.org/article/ucla-antisemitism-investigation-trump-doj",
+    "title": "The Shakedown: Trump\u2019s DOJ Pressured Lawyers to \u201cFind\u201d Evidence That UCLA Had Illegally Tolerated Antisemitism",
+    "source": "propublica",
+    "published_at": "2025-12-12T10:00:00",
+    "fetched_at": "2025-12-17T05:32:34.927003",
+    "filepath": "propublica/20251212_100000_propublica_The-Shakedown-Trumps-DOJ-Pressured-Lawyers-to-Find-Evidence-That-UCLA-Had-Illegally-Tolerated-Antise.md"
+  },
+  "6a0df3c45fcb3e674525c6370bf5f715": {
+    "url": "https://www.propublica.org/article/ron-johnson-wisconsin-chlorine-dioxide-pierre-kory-endorsement",
+    "title": "Senator Endorses Discredited Doctor\u2019s Book on a Chemical He Claims Treats Everything From Autism to Cancer",
+    "source": "propublica",
+    "published_at": "2025-12-11T10:30:00",
+    "fetched_at": "2025-12-17T05:32:35.273401",
+    "filepath": "propublica/20251211_103000_propublica_Senator-Endorses-Discredited-Doctors-Book-on-a-Chemical-He-Claims-Treats-Everything-From-Autism-to-C.md"
+  },
+  "c236b557c153355933b2de3a48bb4f1a": {
+    "url": "https://www.propublica.org/article/omaha-nebraska-lead-superfund-epa-trump",
+    "title": "The EPA Was Considering a Massive Lead Cleanup in Omaha. Then Trump Shifted Guidance.",
+    "source": "propublica",
+    "published_at": "2025-12-11T10:00:00",
+    "fetched_at": "2025-12-17T05:32:35.463695",
+    "filepath": "propublica/20251211_100000_propublica_The-EPA-Was-Considering-a-Massive-Lead-Cleanup-in-Omaha-Then-Trump-Shifted-Guidance.md"
+  },
+  "60553df11e63eb871805908651a335ec": {
+    "url": "https://www.cbsnews.com/video/sneak-peek-three-days-before-christmas/",
+    "title": "Sneak peek: Three Days Before Christmas",
+    "source": "cbs",
+    "published_at": "2025-12-17T05:10:36",
+    "fetched_at": "2025-12-17T05:32:31.723197",
+    "filepath": "cbs/20251217_051036_cbs_Sneak-peek-Three-Days-Before-Christmas.md"
+  },
+  "ab959997141a9f18d0a52eb87d8653b9": {
+    "url": "https://www.cbsnews.com/news/capitol-robert-e-lee-statue-civil-rights-leader-barbara-rose-johns/",
+    "title": "Capitol replaces statue of Robert E. Lee with civil rights icon Barbara Rose Johns",
+    "source": "cbs",
+    "published_at": "2025-12-17T04:21:27",
+    "fetched_at": "2025-12-17T05:32:31.964325",
+    "filepath": "cbs/20251217_042127_cbs_Capitol-replaces-statue-of-Robert-E-Lee-with-civil-rights-icon-Barbara-Rose-Johns.md"
+  },
+  "ff39deb6af8a1d9fd801bddeda9d7f02": {
+    "url": "https://www.cbsnews.com/news/nuno-loureiro-brookline-shooting/",
+    "title": "MIT professor killed in shooting at his Brookline home",
+    "source": "cbs",
+    "published_at": "2025-12-17T04:18:32",
+    "fetched_at": "2025-12-17T05:32:32.627220",
+    "filepath": "cbs/20251217_041832_cbs_MIT-professor-killed-in-shooting-at-his-Brookline-home.md"
+  },
+  "435e4d33d0b40aba8e224acb921a6c0e": {
+    "url": "https://www.cbsnews.com/news/former-top-vaccine-official-jeanne-marrazzo-sues-trump-administration-firing/",
+    "title": "Former top vaccine official sues Trump administration over her firing",
+    "source": "cbs",
+    "published_at": "2025-12-17T04:16:28",
+    "fetched_at": "2025-12-17T05:32:33.289543",
+    "filepath": "cbs/20251217_041628_cbs_Former-top-vaccine-official-sues-Trump-administration-over-her-firing.md"
+  },
+  "05d66d0ac4d9f936ff49660aff8e0fe0": {
+    "url": "https://www.cbsnews.com/video/joe-hunters-mission/",
+    "title": "Joe Hunter's Mission",
+    "source": "cbs",
+    "published_at": "2025-12-17T02:56:01",
+    "fetched_at": "2025-12-17T05:32:33.614602",
+    "filepath": "cbs/20251217_025601_cbs_Joe-Hunters-Mission.md"
+  },
+  "33d0b27dcd7d02a57addc2af654903f5": {
+    "url": "https://www.cbsnews.com/news/judge-denies-request-to-temporarily-block-construction-of-white-house-ballroom/",
+    "title": "Judge denies request to temporarily block construction of White House ballroom",
+    "source": "cbs",
+    "published_at": "2025-12-17T02:33:03",
+    "fetched_at": "2025-12-17T05:32:35.249201",
+    "filepath": "cbs/20251217_023303_cbs_Judge-denies-request-to-temporarily-block-construction-of-White-House-ballroom.md"
+  },
+  "84ee83998ec14f304726dcb8c5087d69": {
+    "url": "https://www.cbsnews.com/news/trump-orders-total-and-complete-blockade-of-sanctioned-oil-tankers-in-venezuela/",
+    "title": "Trump orders \"total and complete blockade\" of sanctioned oil tankers in Venezuela",
+    "source": "cbs",
+    "published_at": "2025-12-17T02:23:14",
+    "fetched_at": "2025-12-17T05:32:35.561687",
+    "filepath": "cbs/20251217_022314_cbs_Trump-orders-total-and-complete-blockade-of-sanctioned-oil-tankers-in-Venezuela.md"
+  },
+  "2b8733ade4924b6692198fc3581847f6": {
+    "url": "https://www.cbsnews.com/video/121625-cbs-evening-news/",
+    "title": "12/16: CBS Evening News",
+    "source": "cbs",
+    "published_at": "2025-12-17T02:21:24",
+    "fetched_at": "2025-12-17T05:32:35.753848",
+    "filepath": "cbs/20251217_022124_cbs_1216-CBS-Evening-News.md"
+  },
+  "ed8837657ac048844775a512335e9d54": {
+    "url": "https://www.npr.org/2025/12/16/nx-s1-5646666/rob-reiner-michele-singer-reiner-dead-son-nick-charges-first-degree-murder",
+    "title": "Nick Reiner will be charged with first degree murder in his parents' killing",
+    "source": "npr",
+    "published_at": "2025-12-16T23:11:04",
+    "fetched_at": "2025-12-17T05:32:31.750091",
+    "filepath": "npr/20251216_231104_npr_Nick-Reiner-will-be-charged-with-first-degree-murder-in-his-parents-killing.md"
+  },
+  "cf69708c577aadeaba0bd6d9970e90ab": {
+    "url": "https://www.npr.org/2025/12/16/nx-s1-5646548/fifa-world-cup-ticket-prices",
+    "title": "After outcry over prices, FIFA to sell $60 tickets for the World Cup -- with a catch",
+    "source": "npr",
+    "published_at": "2025-12-16T22:26:29",
+    "fetched_at": "2025-12-17T05:32:32.357288",
+    "filepath": "npr/20251216_222629_npr_After-outcry-over-prices-FIFA-to-sell-60-tickets-for-the-World-Cup-with-a-catch.md"
+  },
+  "6bd7fb40e51f96a7bcf37017f2fb9fda": {
+    "url": "https://www.npr.org/2025/12/16/nx-s1-5645150/millions-of-immigrants-are-now-in-legal-limbo-amid-the-asylum-freeze",
+    "title": "Millions of immigrants are now in legal limbo amid the asylum freeze",
+    "source": "npr",
+    "published_at": "2025-12-16T22:25:13",
+    "fetched_at": "2025-12-17T05:32:35.567207",
+    "filepath": "npr/20251216_222513_npr_Millions-of-immigrants-are-now-in-legal-limbo-amid-the-asylum-freeze.md"
+  },
+  "687567bb055658fe127aabf3036950b4": {
+    "url": "https://www.npr.org/2025/12/16/nx-s1-5641972/as-threats-grow-parasol-patrol-provides-security-for-drag-story-hour",
+    "title": "As threats grow, 'parasol patrol' provides security for Drag Story Hour",
+    "source": "npr",
+    "published_at": "2025-12-16T22:25:04",
+    "fetched_at": "2025-12-17T05:32:35.824474",
+    "filepath": "npr/20251216_222504_npr_As-threats-grow-parasol-patrol-provides-security-for-Drag-Story-Hour.md"
+  },
+  "fa0a1ebea48702256baaf9a3aac0be7c": {
+    "url": "https://www.npr.org/2025/12/16/nx-s1-5645884/white-house-chief-staff-susie-wiles-interviews-vanity-fair",
+    "title": "What to know from Susie Wiles' interviews with 'Vanity Fair,' according to the writer",
+    "source": "npr",
+    "published_at": "2025-12-16T22:05:51",
+    "fetched_at": "2025-12-17T05:32:32.843892",
+    "filepath": "npr/20251216_220551_npr_What-to-know-from-Susie-Wiles-interviews-with-Vanity-Fair-according-to-the-writer.md"
+  },
+  "19ef45155e4175f87cef9f1da7ca3024": {
+    "url": "https://www.npr.org/2025/12/16/nx-s1-5645727/barbara-rose-johns-capitol-statue",
+    "title": "Her 1951 walkout helped end school segregation. Now her statue is in the U.S. Capitol",
+    "source": "npr",
+    "published_at": "2025-12-16T18:07:59",
+    "fetched_at": "2025-12-17T05:32:34.174369",
+    "filepath": "npr/20251216_180759_npr_Her-1951-walkout-helped-end-school-segregation-Now-her-statue-is-in-the-US-Capitol.md"
+  },
+  "170a0495d6a5613a24ee196f6081f630": {
+    "url": "https://www.npr.org/sections/planet-money/2025/12/16/g-s1-102314/the-warner-bros-curse",
+    "title": "The Warner Bros. Curse",
+    "source": "npr",
+    "published_at": "2025-12-16T11:30:00",
+    "fetched_at": "2025-12-17T05:32:34.703429",
+    "filepath": "npr/20251216_113000_npr_The-Warner-Bros-Curse.md"
+  },
+  "9fc51661b087a7e1958c405a349f908a": {
+    "url": "https://abcnews.go.com/International/trump-announces-total-complete-blockade-sanctioned-venezuelan-oil/story?id=128470561",
+    "title": "Trump announces 'TOTAL AND COMPLETE BLOCKADE' of sanctioned Venezuelan oil tankers",
+    "source": "abc",
+    "published_at": "2025-12-17T05:11:02",
+    "fetched_at": "2025-12-17T05:32:31.720280",
+    "filepath": "abc/20251217_051102_abc_Trump-announces-TOTAL-AND-COMPLETE-BLOCKADE-of-sanctioned-Venezuelan-oil-tankers.md"
+  },
+  "90e935dcab5d586cd3585044d05ed641": {
+    "url": "https://abcnews.go.com/US/brown-university-shooting-manhunt-continues-fbi-offers-reward/story?id=128443272",
+    "title": "FBI video shows man sought in Brown University shooting near police after attack",
+    "source": "abc",
+    "published_at": "2025-12-17T01:29:11",
+    "fetched_at": "2025-12-17T05:32:32.629156",
+    "filepath": "abc/20251217_012911_abc_FBI-video-shows-man-sought-in-Brown-University-shooting-near-police-after-attack.md"
+  },
+  "ecd508ee2989f3232e9aea6fe95905c3": {
+    "url": "https://abcnews.go.com/Live/video/abcnews-live-41463246",
+    "title": "LIVE:  ABC News Live",
+    "source": "abc",
+    "published_at": "2025-12-16T22:48:40",
+    "fetched_at": "2025-12-17T05:32:31.920009",
+    "filepath": "abc/20251216_224840_abc_LIVE-ABC-News-Live.md"
+  },
+  "4c2967184d1d45b3f4adf43cc02b5ac4": {
+    "url": "https://abcnews.go.com/Politics/trump-address-nation-wednesday-night/story?id=128458587",
+    "title": "Trump to address nation Wednesday night",
+    "source": "abc",
+    "published_at": "2025-12-16T22:10:18",
+    "fetched_at": "2025-12-17T05:32:33.184613",
+    "filepath": "abc/20251216_221018_abc_Trump-to-address-nation-Wednesday-night.md"
+  },
+  "07c75789f5884379977c33c58ad4e16b": {
+    "url": "https://abcnews.go.com/Politics/wireStory/dolphins-change-qb-after-tua-tagovailoas-continued-struggles-128462992",
+    "title": "Dolphins considering a change at QB after Tua Tagovailoa's continued struggles",
+    "source": "abc",
+    "published_at": "2025-12-16T20:21:35",
+    "fetched_at": "2025-12-17T05:32:35.539655",
+    "filepath": "abc/20251216_202135_abc_Dolphins-considering-a-change-at-QB-after-Tua-Tagovailoas-continued-struggles.md"
+  },
+  "5f305f738980f9ce1c5416bead5ce544": {
+    "url": "https://abcnews.go.com/Health/video/new-study-shows-covid-19-vaccines-benefit-pregnant-128458641",
+    "title": "WATCH:  New study shows COVID-19 vaccines benefit pregnant women and newborns",
+    "source": "abc",
+    "published_at": "2025-12-16T18:58:12",
+    "fetched_at": "2025-12-17T05:32:34.131337",
+    "filepath": "abc/20251216_185812_abc_WATCH-New-study-shows-COVID-19-vaccines-benefit-pregnant-women-and-newborns.md"
+  },
+  "ec9aae78647d7342b3f8565fadeb8675": {
+    "url": "https://abcnews.go.com/Politics/wireStory/employers-added-40000-jobs-november-government-releases-report-128441515",
+    "title": "The US gained 64,000 jobs in November but lost 105,000 in October; unemployment rate at 4.6%",
+    "source": "abc",
+    "published_at": "2025-12-16T14:45:29",
+    "fetched_at": "2025-12-17T05:32:34.783785",
+    "filepath": "abc/20251216_144529_abc_The-US-gained-64000-jobs-in-November-but-lost-105000-in-October-unemployment-rate-at-46.md"
+  },
+  "69c5741236b04218918e181d3fd2530a": {
+    "url": "https://abcnews.go.com/Politics/wireStory/clutch-play-becoming-trend-saints-rookie-qb-tyler-128438685",
+    "title": "Clutch play becoming a trend for Saints rookie QB Tyler Shough and his resurgent team",
+    "source": "abc",
+    "published_at": "2025-12-16T02:54:03",
+    "fetched_at": "2025-12-17T05:32:35.774457",
+    "filepath": "abc/20251216_025403_abc_Clutch-play-becoming-a-trend-for-Saints-rookie-QB-Tyler-Shough-and-his-resurgent-team.md"
+  },
+  "a55a04b9e9c3786b36e28a41cdab4124": {
+    "url": "https://abcnews.go.com/Politics/wireStory/judge-orders-release-iranian-bodybuilder-after-5-month-128437543",
+    "title": "Judge orders release of Iranian bodybuilder after nearly 5-month detention",
+    "source": "abc",
+    "published_at": "2025-12-16T02:45:33",
+    "fetched_at": "2025-12-17T05:32:36.055656",
+    "filepath": "abc/20251216_024533_abc_Judge-orders-release-of-Iranian-bodybuilder-after-nearly-5-month-detention.md"
+  },
+  "7bcb0d95f1e2df747adfec7ec4cb3897": {
+    "url": "https://abcnews.go.com/Politics/wireStory/seahawks-struggles-offense-continue-playoffs-loom-128436961",
+    "title": "Seahawks' struggles on offense continue as the playoffs loom",
+    "source": "abc",
+    "published_at": "2025-12-16T00:53:53",
+    "fetched_at": "2025-12-17T05:32:35.239595",
+    "filepath": "abc/20251216_005353_abc_Seahawks-struggles-on-offense-continue-as-the-playoffs-loom.md"
+  },
+  "b190afa837d22e9ea09f23d84eeaff58": {
+    "url": "https://www.pbs.org/newshour/nation/what-we-know-so-far-about-the-brown-university-shooting-suspect",
+    "title": "What we know so far about the Brown University shooting suspect",
+    "source": "pbs",
+    "published_at": "2025-12-17T00:33:58",
+    "fetched_at": "2025-12-17T05:32:31.873191",
+    "filepath": "pbs/20251217_003358_pbs_What-we-know-so-far-about-the-Brown-University-shooting-suspect.md"
+  },
+  "4bd216be00866e3732418cf241e852da": {
+    "url": "https://www.pbs.org/newshour/show/jobs-report-reveals-cooling-labor-market-and-uneven-economy-analyst-says",
+    "title": "Jobs report reveals cooling labor market and &#8216;uneven economy,&#8217; analyst says",
+    "source": "pbs",
+    "published_at": "2025-12-16T23:55:29",
+    "fetched_at": "2025-12-17T05:32:32.435715",
+    "filepath": "pbs/20251216_235529_pbs_Jobs-report-reveals-cooling-labor-market-and-8216uneven-economy8217-analyst-says.md"
+  },
+  "07cb0f36304d33c5da3932cd737ee9ee": {
+    "url": "https://www.pbs.org/newshour/show/news-wrap-nick-reiner-facing-first-degree-murder-charges-in-killing-of-his-parents",
+    "title": "News Wrap: Nick Reiner facing first-degree murder charges in killing of his parents",
+    "source": "pbs",
+    "published_at": "2025-12-16T23:50:49",
+    "fetched_at": "2025-12-17T05:32:33.271889",
+    "filepath": "pbs/20251216_235049_pbs_News-Wrap-Nick-Reiner-facing-first-degree-murder-charges-in-killing-of-his-parents.md"
+  },
+  "e0fdc066251045af76274e694427a061": {
+    "url": "https://www.pbs.org/newshour/show/whats-in-the-massive-spending-bill-giving-the-military-more-funding-than-requested",
+    "title": "What&rsquo;s in the massive spending bill giving the military more funding than requested",
+    "source": "pbs",
+    "published_at": "2025-12-16T23:45:26",
+    "fetched_at": "2025-12-17T05:32:34.021462",
+    "filepath": "pbs/20251216_234526_pbs_Whatrsquos-in-the-massive-spending-bill-giving-the-military-more-funding-than-requested.md"
+  },
+  "0d3afc7abd650353090901de778c04af": {
+    "url": "https://www.pbs.org/newshour/show/how-the-affordable-care-act-subsidies-work-and-who-depends-on-them",
+    "title": "How the Affordable Care Act subsidies work and who depends on them",
+    "source": "pbs",
+    "published_at": "2025-12-16T23:40:32",
+    "fetched_at": "2025-12-17T05:32:34.421534",
+    "filepath": "pbs/20251216_234032_pbs_How-the-Affordable-Care-Act-subsidies-work-and-who-depends-on-them.md"
+  },
+  "5b00fafc532596c66981cd1e5da0d781": {
+    "url": "https://www.pbs.org/newshour/show/gop-sen-cassidy-on-addressing-rising-health-care-costs-and-expiring-subsidies",
+    "title": "GOP Sen. Cassidy on addressing rising health care costs and expiring subsidies",
+    "source": "pbs",
+    "published_at": "2025-12-16T23:35:42",
+    "fetched_at": "2025-12-17T05:32:35.696201",
+    "filepath": "pbs/20251216_233542_pbs_GOP-Sen-Cassidy-on-addressing-rising-health-care-costs-and-expiring-subsidies.md"
+  },
+  "bad821e6b4f27e991dca4955c7586166": {
+    "url": "https://www.pbs.org/newshour/world/trump-will-attend-dignified-transfer-of-the-2-national-guard-members-killed-in-syria",
+    "title": "Trump will attend dignified transfer of the 2 National Guard members killed in Syria",
+    "source": "pbs",
+    "published_at": "2025-12-16T22:44:03",
+    "fetched_at": "2025-12-17T05:32:35.923521",
+    "filepath": "pbs/20251216_224403_pbs_Trump-will-attend-dignified-transfer-of-the-2-National-Guard-members-killed-in-Syria.md"
+  },
+  "c0dcad69d3acbc88c8e19ae88caf8e82": {
+    "url": "https://www.pbs.org/newshour/politics/how-a-trump-business-deal-with-a-crypto-firm-exposes-potential-conflicts-of-interest",
+    "title": "How a Trump business deal with a crypto firm exposes potential conflicts of interest",
+    "source": "pbs",
+    "published_at": "2025-12-16T19:36:44",
+    "fetched_at": "2025-12-17T05:32:36.175468",
+    "filepath": "pbs/20251216_193644_pbs_How-a-Trump-business-deal-with-a-crypto-firm-exposes-potential-conflicts-of-interest.md"
+  },
+  "075146f3e8d7bb597beb602a08694c65": {
+    "url": "https://www.bbc.com/news/articles/c4gej5ezyypo?at_medium=RSS&at_campaign=rss",
+    "title": "Trump orders blockade of sanctioned oil tankers in and out of Venezuela",
+    "source": "bbc",
+    "published_at": "2025-12-17T03:40:54",
+    "fetched_at": "2025-12-17T05:32:34.656440",
+    "filepath": "bbc/20251217_034054_bbc_Trump-orders-blockade-of-sanctioned-oil-tankers-in-and-out-of-Venezuela.md"
+  },
+  "90bc1856d250effee5cb3a9038ffee70": {
+    "url": "https://www.bbc.com/news/articles/c5yjv5md3jzo?at_medium=RSS&at_campaign=rss",
+    "title": "Rob and Michele Reiner's son Nick charged with murder in parents' deaths",
+    "source": "bbc",
+    "published_at": "2025-12-17T01:00:38",
+    "fetched_at": "2025-12-17T05:32:35.067845",
+    "filepath": "bbc/20251217_010038_bbc_Rob-and-Michele-Reiners-son-Nick-charged-with-murder-in-parents-deaths.md"
+  },
+  "4e436b6a066dbeec5899dc3c6cf94245": {
+    "url": "https://www.bbc.com/news/articles/c98nqz29vg2o?at_medium=RSS&at_campaign=rss",
+    "title": "Doctors start five-day strike as hospitals grapple with flu wave",
+    "source": "bbc",
+    "published_at": "2025-12-17T00:34:07",
+    "fetched_at": "2025-12-17T05:32:35.890133",
+    "filepath": "bbc/20251217_003407_bbc_Doctors-start-five-day-strike-as-hospitals-grapple-with-flu-wave.md"
+  },
+  "96a867cf439e752b6efca4b6bfa424d6": {
+    "url": "https://www.bbc.com/news/articles/c1e49x686e6o?at_medium=RSS&at_campaign=rss",
+    "title": "Timeline: Paul Doyle's journey to causing Liverpool parade horror",
+    "source": "bbc",
+    "published_at": "2025-12-17T00:10:56",
+    "fetched_at": "2025-12-17T05:32:36.075733",
+    "filepath": "bbc/20251217_001056_bbc_Timeline-Paul-Doyles-journey-to-causing-Liverpool-parade-horror.md"
+  },
+  "548a06039e3a62564842836ac3627a58": {
+    "url": "https://www.bbc.com/news/articles/cg4ng7ee9vwo?at_medium=RSS&at_campaign=rss",
+    "title": "Erasmus scheme to return for UK students, BBC understands",
+    "source": "bbc",
+    "published_at": "2025-12-16T21:05:54",
+    "fetched_at": "2025-12-17T05:32:32.329093",
+    "filepath": "bbc/20251216_210554_bbc_Erasmus-scheme-to-return-for-UK-students-BBC-understands.md"
+  },
+  "216339cd6cfd280e6bbb901a8270ae54": {
+    "url": "https://www.bbc.com/news/articles/cz0ngzg51p3o?at_medium=RSS&at_campaign=rss",
+    "title": "Government addicted to making announcements, says PM's enforcer",
+    "source": "bbc",
+    "published_at": "2025-12-16T21:03:40",
+    "fetched_at": "2025-12-17T05:32:33.425102",
+    "filepath": "bbc/20251216_210340_bbc_Government-addicted-to-making-announcements-says-PMs-enforcer.md"
+  },
+  "ffd3e064c0a08eb15cc4a11e95a097d7": {
+    "url": "https://www.bbc.com/news/articles/c2dz16jxjp1o?at_medium=RSS&at_campaign=rss",
+    "title": "Employment Rights Bill clears last parliamentary hurdle",
+    "source": "bbc",
+    "published_at": "2025-12-16T18:27:02",
+    "fetched_at": "2025-12-17T05:32:33.139428",
+    "filepath": "bbc/20251216_182702_bbc_Employment-Rights-Bill-clears-last-parliamentary-hurdle.md"
+  },
+  "dfdb1e2749b962262d4aecbafd4bed68": {
+    "url": "https://www.bbc.com/news/articles/cx2341yx719o?at_medium=RSS&at_campaign=rss",
+    "title": "Dashcam video shows couple trying to stop gunman before being killed in Bondi attack",
+    "source": "bbc",
+    "published_at": "2025-12-16T11:07:53",
+    "fetched_at": "2025-12-17T05:32:34.262198",
+    "filepath": "bbc/20251216_110753_bbc_Dashcam-video-shows-couple-trying-to-stop-gunman-before-being-killed-in-Bondi-attack.md"
+  },
+  "d6eadc65715c7fb2120e13454a16726f": {
+    "url": "https://www.aljazeera.com/news/2025/12/17/trump-stands-by-chief-of-staff-after-shock-remarks-about-vance-bondi-musk?traffic_source=rss",
+    "title": "Trump stands by chief of staff after shock remarks about Vance, Bondi, Musk",
+    "source": "al_jazeera",
+    "published_at": "2025-12-17T04:14:26",
+    "fetched_at": "2025-12-17T05:32:31.995095",
+    "filepath": "al_jazeera/20251217_041426_al_jazeera_Trump-stands-by-chief-of-staff-after-shock-remarks-about-Vance-Bondi-Musk.md"
+  },
+  "c2ee37f5d236ab7115127bbf3c41314b": {
+    "url": "https://www.aljazeera.com/news/2025/12/17/ex-harvard-morgue-manager-who-stole-body-parts-gets-8-years-in-prison?traffic_source=rss",
+    "title": "Ex-Harvard morgue manager who sold body parts sentenced to 8 years in jail",
+    "source": "al_jazeera",
+    "published_at": "2025-12-17T02:01:11",
+    "fetched_at": "2025-12-17T05:32:32.568888",
+    "filepath": "al_jazeera/20251217_020111_al_jazeera_Ex-Harvard-morgue-manager-who-sold-body-parts-sentenced-to-8-years-in-jail.md"
+  },
+  "9ce709bb75c3332d2c00aa772a7bb381": {
+    "url": "https://www.aljazeera.com/news/2025/12/17/russia-ukraine-war-list-of-key-events-day-1392?traffic_source=rss",
+    "title": "Russia-Ukraine war: List of key events, day 1,392",
+    "source": "al_jazeera",
+    "published_at": "2025-12-17T01:45:29",
+    "fetched_at": "2025-12-17T05:32:33.226310",
+    "filepath": "al_jazeera/20251217_014529_al_jazeera_Russia-Ukraine-war-List-of-key-events-day-1392.md"
+  },
+  "c41ff758b36a584d0f314512bede6261": {
+    "url": "https://www.cnn.com/audio/podcasts/political-briefing",
+    "title": "CNN Political Briefing",
+    "source": "cnn",
+    "published_at": "2025-12-17T05:32:37.634679",
+    "fetched_at": "2025-12-17T05:32:37.634716",
+    "filepath": "cnn/20251217_053237_cnn_CNN-Political-Briefing.md"
+  },
+  "a9b19b815aedca5b5b82a70ef6c7bb31": {
+    "url": "https://www.cnn.com/business/live-news/fox-news-dominion-trial-04-18-23/h_8d51e3ae2714edaa0dace837305d03b8",
+    "title": "Dominion still has pending lawsuits against election deniers such as Rudy Giuliani and Sidney Powell",
+    "source": "cnn",
+    "published_at": "2025-12-17T05:32:34.305863",
+    "fetched_at": "2025-12-17T05:32:34.305888",
+    "filepath": "cnn/20251217_053234_cnn_Dominion-still-has-pending-lawsuits-against-election-deniers-such-as-Rudy-Giuliani-and-Sidney-Powell.md"
+  },
+  "022fcf33f4b3ebd987257b9254d1cec5": {
+    "url": "https://www.cnn.com/business/live-news/fox-news-dominion-trial-04-18-23/index.html",
+    "title": "Some on-air claims about Dominion Voting Systems were false, Fox News acknowledges in statement after deal is announced",
+    "source": "cnn",
+    "published_at": "2023-04-19T12:44:51",
+    "fetched_at": "2025-12-17T05:32:33.329112",
+    "filepath": "cnn/20230419_124451_cnn_Some-on-air-claims-about-Dominion-Voting-Systems-were-false-Fox-News-acknowledges-in-statement-after.md"
+  },
+  "df833fdd9e9ab659ada090511342b5cf": {
+    "url": "https://www.cnn.com/2023/04/18/us/fulton-county-jail-leadership-resignations-lashawn-thompson-death/index.html",
+    "title": "Fulton County, Georgia, jail leadership resigns after inmate's death and accusations of unsanitary conditions",
+    "source": "cnn",
+    "published_at": "2023-04-18T15:08:03",
+    "fetched_at": "2025-12-17T05:32:35.714815",
+    "filepath": "cnn/20230418_150803_cnn_Fulton-County-Georgia-jail-leadership-resigns-after-inmates-death-and-accusations-of-unsanitary-cond.md"
+  },
+  "24d1404c6574e70b9b3106773761521f": {
+    "url": "https://www.cnn.com/2023/04/17/us/crosley-green-prison-return/index.html",
+    "title": "He was free for 2 years. Now Crosley Green is back in prison for a crime he says he didn't commit",
+    "source": "cnn",
+    "published_at": "2023-04-17T22:45:49",
+    "fetched_at": "2025-12-17T05:32:36.018732",
+    "filepath": "cnn/20230417_224549_cnn_He-was-free-for-2-years-Now-Crosley-Green-is-back-in-prison-for-a-crime-he-says-he-didnt-commit.md"
+  },
+  "57a22122ecf563ab19b38b5830216fc6": {
+    "url": "https://www.cnn.com/2023/04/17/media/dominion-fox-news-allegations/index.html",
+    "title": "Here are the 20 specific Fox broadcasts and tweets Dominion says were defamatory",
+    "source": "cnn",
+    "published_at": "2023-04-17T16:01:11",
+    "fetched_at": "2025-12-17T05:32:35.169957",
+    "filepath": "cnn/20230417_160111_cnn_Here-are-the-20-specific-Fox-broadcasts-and-tweets-Dominion-says-were-defamatory.md"
+  },
+  "b42bd9a22f3285e089f0bcbd003f4de1": {
+    "url": "https://www.cnn.com/2023/04/17/us/tennessee-air-national-guardsman-hitman-online-application/index.html",
+    "title": "Tennessee Air National Guardsman applied to be a hitman online, the FBI says. It was a spoof website and now he's facing charges",
+    "source": "cnn",
+    "published_at": "2023-04-17T09:06:12",
+    "fetched_at": "2025-12-17T05:32:36.303555",
+    "filepath": "cnn/20230417_090612_cnn_Tennessee-Air-National-Guardsman-applied-to-be-a-hitman-online-the-FBI-says-It-was-a-spoof-website-a.md"
+  },
+  "eb57e9ca09a9d9058aa532f67f396baa": {
+    "url": "https://www.cnn.com/2022/12/11/politics/louisa-terrell-legislative-director/index.html",
+    "title": "Meet the woman steering Biden's bipartisan winning streak on Capitol Hill",
+    "source": "cnn",
+    "published_at": "2022-12-11T16:16:48",
+    "fetched_at": "2025-12-17T05:32:37.435875",
+    "filepath": "cnn/20221211_161648_cnn_Meet-the-woman-steering-Bidens-bipartisan-winning-streak-on-Capitol-Hill.md"
+  },
+  "28d65d9f617056271b563120509f0c33": {
+    "url": "https://www.cnn.com/2022/12/10/politics/kyrsten-sinema-independent-democrats/index.html",
+    "title": "How Kyrsten Sinema's decision makes Democrats' 2024 Senate map tighter",
+    "source": "cnn",
+    "published_at": "2022-12-10T17:24:17",
+    "fetched_at": "2025-12-17T05:32:37.115720",
+    "filepath": "cnn/20221210_172417_cnn_How-Kyrsten-Sinemas-decision-makes-Democrats-2024-Senate-map-tighter.md"
+  },
+  "c39d0e35d3e91eeaa3a6c16062976b9d": {
+    "url": "https://www.nbcnews.com/video/trump-orders-blockage-of-oil-tankers-entering-and-leaving-venezuela-254561349598",
+    "title": "Trump orders blockade of oil tankers entering and leaving Venezuela",
+    "source": "nbc",
+    "published_at": "2025-12-17T03:55:46",
+    "fetched_at": "2025-12-17T05:32:33.751579",
+    "filepath": "nbc/20251217_035546_nbc_Trump-orders-blockade-of-oil-tankers-entering-and-leaving-Venezuela.md"
+  },
+  "b97a1fd3646dcc298cb5ef0eaf1aecce": {
+    "url": "https://www.nbcnews.com/politics/trump-administration/trump-orders-blockade-sanctioned-oil-tankers-venezuela-rcna249616",
+    "title": "Trump orders blockade of all 'sanctioned oil tankers' entering and leaving Venezuela",
+    "source": "nbc",
+    "published_at": "2025-12-17T01:09:06",
+    "fetched_at": "2025-12-17T05:32:39.300082",
+    "filepath": "nbc/20251217_010906_nbc_Trump-orders-blockade-of-all-sanctioned-oil-tankers-entering-and-leaving-Venezuela.md"
+  },
+  "1172f20af36386e824c780259760dea4": {
+    "url": "https://www.nbcnews.com/nightly-news/video/trump-defends-wh-chief-of-staff-over-new-interview-254535749908",
+    "title": "Trump defends WH chief of staff over new interview",
+    "source": "nbc",
+    "published_at": "2025-12-16T23:54:46",
+    "fetched_at": "2025-12-17T05:32:36.837890",
+    "filepath": "nbc/20251216_235446_nbc_Trump-defends-WH-chief-of-staff-over-new-interview.md"
+  },
+  "544d9e2a3c762c16f0952de9b1c60bac": {
+    "url": "https://www.nbcnews.com/politics/white-house/judge-allows-trump-white-house-ballroom-construction-move-forward-rcna249589",
+    "title": "Federal judge allows Trump's White House ballroom construction to move forward",
+    "source": "nbc",
+    "published_at": "2025-12-16T23:49:07",
+    "fetched_at": "2025-12-17T05:32:38.891292",
+    "filepath": "nbc/20251216_234907_nbc_Federal-judge-allows-Trumps-White-House-ballroom-construction-to-move-forward.md"
+  },
+  "74cbc2572e06c7fab24967867a47a8fc": {
+    "url": "https://www.nbcnews.com/nightly-news/video/rob-reiner-s-son-charged-with-his-parents-murders-254535749768",
+    "title": "Rob Reiner\u2019s son charged with his parents\u2019 murders",
+    "source": "nbc",
+    "published_at": "2025-12-16T23:39:46",
+    "fetched_at": "2025-12-17T05:32:34.822888",
+    "filepath": "nbc/20251216_233946_nbc_Rob-Reiners-son-charged-with-his-parents-murders.md"
+  },
+  "1f2ba9f33163d8af3241e223413c89f6": {
+    "url": "https://www.nbcnews.com/politics/white-house/top-takeaways-white-house-chief-staff-susie-wiless-interviews-vanity-f-rcna249467",
+    "title": "Top takeaways from White House chief of staff Susie Wiles' interviews with Vanity Fair",
+    "source": "nbc",
+    "published_at": "2025-12-16T21:26:28",
+    "fetched_at": "2025-12-17T05:32:38.186871",
+    "filepath": "nbc/20251216_212628_nbc_Top-takeaways-from-White-House-chief-of-staff-Susie-Wiles-interviews-with-Vanity-Fair.md"
+  },
+  "707087bcf40fced8198c53c5f93df6bc": {
+    "url": "https://www.nbcnews.com/politics/congress/republicans-ditch-vote-obamacare-funding-premiums-rise-2026-rcna249521",
+    "title": "House Republican leaders ditch vote on ACA funding, all but ensuring premiums will rise",
+    "source": "nbc",
+    "published_at": "2025-12-16T17:08:23",
+    "fetched_at": "2025-12-17T05:32:37.730302",
+    "filepath": "nbc/20251216_170823_nbc_House-Republican-leaders-ditch-vote-on-ACA-funding-all-but-ensuring-premiums-will-rise.md"
+  },
+  "9415d1d4c6b95e98a2cfd59af453c018": {
+    "url": "https://www.nbcnews.com/news/us-news/james-woods-praises-patriot-rob-reiner-slams-insults-slain-director-in-rcna249484",
+    "title": "James Woods praises 'patriot' Rob Reiner, slams insults of slain director as 'infuriating'",
+    "source": "nbc",
+    "published_at": "2025-12-16T16:08:03",
+    "fetched_at": "2025-12-17T05:32:35.878905",
+    "filepath": "nbc/20251216_160803_nbc_James-Woods-praises-patriot-Rob-Reiner-slams-insults-of-slain-director-as-infuriating.md"
+  },
+  "3cdd0395c8f71e1d47acb42c1b27d35a": {
+    "url": "https://www.nbcnews.com/news/us-news/carl-reiner-nick-conan-obrien-party-deaths-rcna249396",
+    "title": "Reiners' son made guests uneasy at party day before his parents were found dead, sources say",
+    "source": "nbc",
+    "published_at": "2025-12-16T00:29:36",
+    "fetched_at": "2025-12-17T05:32:35.300647",
+    "filepath": "nbc/20251216_002936_nbc_Reiners-son-made-guests-uneasy-at-party-day-before-his-parents-were-found-dead-sources-say.md"
+  },
+  "f1fec97b95af0ee97a2e1837e4884f1d": {
+    "url": "https://www.washingtonpost.com/investigations/2025/12/16/stewart-ruch-angilican-bishop-aquitted/",
+    "title": "After secret church trial, Illinois N. American Anglican bishop acquitted",
+    "source": "washington_post",
+    "published_at": "2025-12-17T01:18:35",
+    "fetched_at": "2025-12-17T05:32:50.825459",
+    "filepath": "washington_post/20251217_011835_washington_post_After-secret-church-trial-Illinois-N-American-Anglican-bishop-acquitted.md"
+  },
+  "cb48f87735f54852ac090c8cc8d8f6aa": {
+    "url": "https://www.washingtonpost.com/politics/2025/12/16/trump-ballroom-lawsuit-national-security/",
+    "title": "Federal judge suggests White House ballroom construction may continue",
+    "source": "washington_post",
+    "published_at": "2025-12-17T01:16:31",
+    "fetched_at": "2025-12-17T05:32:40.139021",
+    "filepath": "washington_post/20251217_011631_washington_post_Federal-judge-suggests-White-House-ballroom-construction-may-continue.md"
+  },
+  "81e8185a7702c6e2308fd35dc35ddac0": {
+    "url": "https://www.washingtonpost.com/national-security/2025/12/16/coast-guard-swastikas-nooses/",
+    "title": "Coast Guard enacts policy calling swastikas, nooses \u2018potentially divisive\u2019",
+    "source": "washington_post",
+    "published_at": "2025-12-17T00:50:27",
+    "fetched_at": "2025-12-17T05:32:40.695351",
+    "filepath": "washington_post/20251217_005027_washington_post_Coast-Guard-enacts-policy-calling-swastikas-nooses-potentially-divisive.md"
+  },
+  "ab6ac114879af8085b174aecedf8627c": {
+    "url": "https://www.washingtonpost.com/nation/2025/12/16/brown-university-shooting-investigation-providence/",
+    "title": "Police release \u2018enhanced photo\u2019 of Brown University shooting person of interest",
+    "source": "washington_post",
+    "published_at": "2025-12-17T00:36:56",
+    "fetched_at": "2025-12-17T05:32:53.095599",
+    "filepath": "washington_post/20251217_003656_washington_post_Police-release-enhanced-photo-of-Brown-University-shooting-person-of-interest.md"
+  },
+  "c1d3ccbd582bcc1b14a363e72c55d52e": {
+    "url": "https://www.washingtonpost.com/nation/2025/12/16/nick-reiner-murder-charges/",
+    "title": "Nick Reiner charged with murder in killing of parents",
+    "source": "washington_post",
+    "published_at": "2025-12-17T00:17:55",
+    "fetched_at": "2025-12-17T05:32:53.579607",
+    "filepath": "washington_post/20251217_001755_washington_post_Nick-Reiner-charged-with-murder-in-killing-of-parents.md"
+  },
+  "000119c6d77c307e75f906cf19fa859a": {
+    "url": "https://www.washingtonpost.com/nation/2025/12/16/nick-reiner-dopey-podcast/",
+    "title": "How Nick Reiner struggled with addiction, and his parents",
+    "source": "washington_post",
+    "published_at": "2025-12-16T23:24:21",
+    "fetched_at": "2025-12-17T05:32:54.041060",
+    "filepath": "washington_post/20251216_232421_washington_post_How-Nick-Reiner-struggled-with-addiction-and-his-parents.md"
+  },
+  "4316ac1148f49fc41788a5195c9f5fbb": {
+    "url": "https://www.washingtonpost.com/immigration/2025/12/16/trump-travel-ban-expanded/",
+    "title": "Trump expands travel ban to 39 countries after shooting of Guard members",
+    "source": "washington_post",
+    "published_at": "2025-12-16T22:55:12",
+    "fetched_at": "2025-12-17T05:32:41.140985",
+    "filepath": "washington_post/20251216_225512_washington_post_Trump-expands-travel-ban-to-39-countries-after-shooting-of-Guard-members.md"
+  },
+  "242b2527bbcd1eaa91e2bca28b0bfa6c": {
+    "url": "https://www.washingtonpost.com/politics/2025/12/16/wiles-trump-vanity-fair/",
+    "title": "White House rallies around Susie Wiles after unguarded interviews",
+    "source": "washington_post",
+    "published_at": "2025-12-16T21:40:58",
+    "fetched_at": "2025-12-17T05:32:41.616633",
+    "filepath": "washington_post/20251216_214058_washington_post_White-House-rallies-around-Susie-Wiles-after-unguarded-interviews.md"
+  },
+  "76edd8b795beafc7186d1d19003f6974": {
+    "url": "https://www.washingtonpost.com/politics/2025/12/16/white-house-ballroom-lawsuit-plans/",
+    "title": "Where things stand with the White House ballroom",
+    "source": "washington_post",
+    "published_at": "2025-12-16T21:33:42",
+    "fetched_at": "2025-12-17T05:32:42.112607",
+    "filepath": "washington_post/20251216_213342_washington_post_Where-things-stand-with-the-White-House-ballroom.md"
+  }
+}

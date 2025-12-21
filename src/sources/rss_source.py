@@ -26,14 +26,11 @@ class RSSSource(NewsSource):
             "http://feeds.bbci.co.uk/news/uk/rss.xml"
         ],
         ArticleSource.REUTERS: [
-            "https://www.reutersagency.com/feed/?taxonomy=best-topics&post_type=best",
-            "https://www.reuters.com/rssfeed/domesticNews",
-            "https://www.reuters.com/rssfeed/politicsNews"
+            # Reuters RSS feeds are currently unavailable/blocked
+            # Keeping empty to avoid errors
         ],
         ArticleSource.POLITICO: [
-            "https://www.politico.com/rss/politics08.xml",
-            "https://www.politico.com/rss/congress.xml",
-            "https://www.politico.com/rss/whitehouse.xml"
+            "https://rss.politico.com/politics-news.xml",
         ],
         ArticleSource.THE_HILL: [
             "https://thehill.com/news/feed/",
@@ -46,9 +43,8 @@ class RSSSource(NewsSource):
             "https://feeds.npr.org/1003/rss.xml"   # U.S.
         ],
         ArticleSource.CNN: [
-            "http://rss.cnn.com/rss/cnn_topstories.rss",
-            "http://rss.cnn.com/rss/cnn_us.rss",
-            "http://rss.cnn.com/rss/cnn_allpolitics.rss"
+            # CNN RSS feeds are currently unavailable/timing out
+            # Disabled to prevent hanging
         ],
         ArticleSource.ABC: [
             "https://abcnews.go.com/abcnews/topstories",
@@ -95,16 +91,17 @@ class RSSSource(NewsSource):
             fetch_full_content: Whether to scrape full article content from URLs
             **kwargs: Additional arguments
         """
+        # Check if feeds are configured for this source
+        self.feed_urls = self.RSS_FEEDS.get(source_id, [])
+        if not self.feed_urls:
+            logger.warning(f"No RSS feeds configured for {source_id.value}")
+        
         super().__init__(
             source_id=source_id,
             credentials=credentials,
             rate_limit=30,  # Conservative rate limit for RSS
             **kwargs
         )
-
-        self.feed_urls = self.RSS_FEEDS.get(source_id, [])
-        if not self.feed_urls:
-            raise NewsSourceException(f"No RSS feeds configured for {source_id}")
         
         self.fetch_full_content = fetch_full_content
         self.content_scraper = ContentScraper() if fetch_full_content else None
@@ -126,6 +123,10 @@ class RSSSource(NewsSource):
         to_date: Optional[datetime] = None
     ) -> List[Article]:
         """Fetch articles from RSS feeds."""
+        if not self.feed_urls:
+            logger.warning(f"✗ {self.source_id.value}: No RSS feeds available")
+            return []
+        
         articles = []
         articles_per_feed = max(1, max_articles // len(self.feed_urls))
 
@@ -144,7 +145,7 @@ class RSSSource(NewsSource):
                     break
 
             except Exception as e:
-                logger.warning(f"Failed to fetch from RSS feed {feed_url}: {e}")
+                logger.debug(f"Feed {feed_url[:50]} failed: {str(e)[:50]}")
                 continue
 
         # Sort by published date (newest first)
@@ -153,10 +154,10 @@ class RSSSource(NewsSource):
         # Trim to max_articles
         articles = articles[:max_articles]
 
-        if not articles:
-            logger.warning(f"No articles fetched from {self.source_id.value} - all feeds may have failed or returned no content")
+        if articles:
+            logger.info(f"✓ {self.source_id.value}: {len(articles)} articles")
         else:
-            logger.info(f"Fetched {len(articles)} articles from {self.source_id.value} RSS feeds")
+            logger.warning(f"✗ {self.source_id.value}: No articles downloaded")
         
         return articles
 
@@ -175,29 +176,31 @@ class RSSSource(NewsSource):
         feed_category = self._extract_category_from_url(feed_url)
 
         try:
-            # Parse the RSS feed
-            feed = feedparser.parse(feed_url)
+            # Parse the RSS feed with timeout
+            import socket
+            original_timeout = socket.getdefaulttimeout()
+            socket.setdefaulttimeout(self.timeout)
+            
+            try:
+                feed = feedparser.parse(feed_url)
+            finally:
+                socket.setdefaulttimeout(original_timeout)
 
             if feed.bozo:
-                logger.warning(f"RSS feed parsing warning for {feed_url}: {feed.bozo_exception}")
-
-            logger.debug(f"Feed {feed_url} has {len(feed.entries)} total entries")
+                logger.debug(f"RSS parse warning: {str(feed.bozo_exception)[:50]}")
 
             for entry in feed.entries[:max_articles]:
                 try:
                     article = self._parse_entry(entry, feed_category)
 
                     if not article:
-                        logger.debug(f"Failed to parse entry from {feed_url}")
                         continue
 
                     # Apply filters
                     if from_date and article.published_at < from_date:
-                        logger.debug(f"Article filtered by from_date: {article.title}")
                         continue
 
                     if to_date and article.published_at > to_date:
-                        logger.debug(f"Article filtered by to_date: {article.title}")
                         continue
 
                     if query and query.strip():
@@ -218,24 +221,21 @@ class RSSSource(NewsSource):
                                     break
 
                             if not match_found:
-                                logger.debug(f"Article filtered by query '{query}': {article.title}")
                                 continue
                         else:
                             # Simple keyword matching
                             if query_lower not in title_lower and query_lower not in desc_lower and query_lower not in content_lower:
-                                logger.debug(f"Article filtered by query '{query}': {article.title}")
                                 continue
 
-                    logger.debug(f"Article accepted: {article.title}")
                     articles.append(article)
 
                 except Exception as e:
-                    logger.warning(f"Failed to parse RSS entry: {e}")
+                    logger.debug(f"Entry parse error: {str(e)[:40]}")
                     continue
 
         except Exception as e:
-            logger.error(f"Failed to fetch RSS feed {feed_url}: {e}")
-            raise NewsSourceException(f"RSS feed fetch failed: {str(e)}")
+            logger.debug(f"Feed fetch failed: {str(e)[:50]}")
+            return []
 
         return articles
 
@@ -306,11 +306,14 @@ class RSSSource(NewsSource):
                     full_content = self.content_scraper.fetch_article_content(url)
                     if full_content and len(full_content) > len(content or ''):
                         content = full_content
-                        logger.debug(f"Fetched full content for: {title[:50]}")
                 except Exception as e:
-                    logger.debug(f"Could not fetch full content for {url}: {e}")
-                    # Fall back to RSS content
+                    logger.debug(f"Scraping failed for {url[:50]}: {str(e)[:30]}")
                     pass
+            
+            # Skip articles without meaningful content
+            if not content or len(content.strip()) < 100:
+                logger.debug(f"Skipping article with insufficient content: {title[:50]}")
+                return None
 
             # Extract author
             author = entry.get('author') or entry.get('dc:creator')

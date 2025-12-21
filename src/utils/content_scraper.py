@@ -38,16 +38,15 @@ class ContentScraper:
             Article content or None if fetch fails
         """
         try:
-            # Try newspaper3k first (best for news articles)
+            # Try newspaper3k first (best for news articles) with timeout
             article = NewspaperArticle(url)
+            article.config.browser_user_agent = self.session.headers['User-Agent']
+            article.config.request_timeout = self.timeout
             article.download()
             article.parse()
             
             if article.text and len(article.text.strip()) > 100:
-                logger.debug(f"Successfully scraped content from {url} using newspaper3k")
                 return article.text.strip()
-            
-            logger.debug(f"newspaper3k returned insufficient content, falling back to BeautifulSoup")
             
             # Fallback to BeautifulSoup
             response = self.session.get(url, timeout=self.timeout)
@@ -75,7 +74,6 @@ class ContentScraper:
                 if content_elem:
                     text = content_elem.get_text(separator='\n', strip=True)
                     if len(text) > 100:
-                        logger.debug(f"Successfully scraped content from {url} using BeautifulSoup")
                         return text
             
             # Last resort: get all paragraph text
@@ -83,14 +81,12 @@ class ContentScraper:
             if paragraphs:
                 text = '\n\n'.join(p.get_text(strip=True) for p in paragraphs if p.get_text(strip=True))
                 if len(text) > 100:
-                    logger.debug(f"Successfully scraped content from {url} using paragraph extraction")
                     return text
             
-            logger.warning(f"Could not extract meaningful content from {url}")
             return None
             
         except Exception as e:
-            logger.warning(f"Failed to scrape content from {url}: {e}")
+            logger.debug(f"Failed to scrape {url}: {str(e)[:50]}")
             return None
     
     def close(self):

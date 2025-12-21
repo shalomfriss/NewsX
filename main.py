@@ -222,9 +222,7 @@ Examples:
     # Setup logging
     setup_logging(log_level=log_level)
 
-    logger.info("=" * 80)
-    logger.info("NEWS AGGREGATOR STARTED")
-    logger.info("=" * 80)
+    logger.info("News Aggregator Started")
 
     # Initialize credential store
     credential_store = CredentialStore(
@@ -296,8 +294,6 @@ Examples:
         to_date = datetime.strptime(args.to_date, '%Y-%m-%d')
 
     # Fetch and save articles
-    logger.info("Starting article fetch...")
-
     available_sources = aggregator.get_available_sources()
     logger.info(f"Available sources: {', '.join(available_sources)}")
 
@@ -310,19 +306,19 @@ Examples:
     )
 
     # Print summary
-    print("\n" + "=" * 80)
-    print("FETCH SUMMARY")
-    print("=" * 80)
-    print(f"Articles fetched: {stats['fetched']}")
-    print(f"Articles saved: {stats['saved']}")
-    print(f"Duplicates skipped: {stats['duplicates']}")
-    print(f"Sources queried: {stats['sources']}")
-    print("=" * 80)
+    print("\n" + "=" * 60)
+    print("DOWNLOAD SUMMARY")
+    print("=" * 60)
+    print(f"Total articles downloaded: {stats['saved']}")
+    if stats['duplicates'] > 0:
+        print(f"Duplicates skipped: {stats['duplicates']}")
+    print(f"Active sources: {stats['sources']}")
+    print("=" * 60)
 
     if settings.storage_type == 'file':
-        print(f"\nArticles saved to: {settings.news_md_dir.absolute()}")
+        print(f"Location: {settings.news_md_dir.absolute()}\n")
     else:
-        print(f"\nArticles saved to database: {settings.database_url}")
+        print(f"Location: Database\n")
 
     logger.info("News aggregation completed successfully")
 

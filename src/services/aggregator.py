@@ -99,7 +99,8 @@ class NewsAggregator:
                     source = source_class(
                         source_id=source_id,
                         timeout=self.settings.request_timeout,
-                        max_retries=self.settings.max_retries
+                        max_retries=self.settings.max_retries,
+                        fetch_full_content=False  # Disable to prevent hanging
                     )
                 else:
                     source = source_class(
@@ -194,11 +195,10 @@ class NewsAggregator:
                 to_date=to_date
             )
 
-            logger.info(f"Fetched {len(articles)} articles from {source_id.value}")
             return articles
 
         except NewsSourceException as e:
-            logger.error(f"Failed to fetch from {source_id.value}: {e}")
+            logger.error(f"✗ {source_id.value}: {str(e)[:80]}")
             return []
 
     def fetch_from_all_sources(
@@ -231,7 +231,7 @@ class NewsAggregator:
         max_articles = max_articles_per_source or self.settings.max_articles_per_source
 
         if parallel:
-            # Fetch in parallel using ThreadPoolExecutor
+            # Fetch in parallel using ThreadPoolExecutor with timeout
             with ThreadPoolExecutor(max_workers=len(self.sources)) as executor:
                 future_to_source = {
                     executor.submit(
@@ -245,13 +245,13 @@ class NewsAggregator:
                     for source_id in self.sources
                 }
 
-                for future in as_completed(future_to_source):
+                for future in as_completed(future_to_source, timeout=60):
                     source_id = future_to_source[future]
                     try:
-                        articles = future.result()
+                        articles = future.result(timeout=30)
                         results[source_id] = articles
                     except Exception as e:
-                        logger.error(f"Error fetching from {source_id.value}: {e}")
+                        logger.error(f"✗ {source_id.value}: Timeout or error")
                         results[source_id] = []
         else:
             # Fetch sequentially
@@ -295,6 +295,8 @@ class NewsAggregator:
         if self.settings.fetch_political_only and not query:
             query = "politics OR election OR government OR congress OR senate"
 
+        print(f"\nFetching articles from {len(self.sources)} sources...")
+        
         # Fetch articles
         results = self.fetch_from_all_sources(
             max_articles_per_source=max_articles_per_source,
@@ -307,29 +309,27 @@ class NewsAggregator:
         # Save articles
         total_fetched = 0
         total_saved = 0
+        source_results = []
 
         for source_id, articles in results.items():
             total_fetched += len(articles)
             saved_count = self.repository.save_articles(articles)
             total_saved += saved_count
-
-            logger.info(
-                f"{source_id.value}: Fetched {len(articles)}, Saved {saved_count}"
-            )
+            
+            if saved_count > 0:
+                source_results.append(f"  ✓ {source_id.value}: {saved_count} articles")
 
         duplicates = total_fetched - total_saved
+
+        # Print progress summary
+        print("\n" + "\n".join(source_results))
 
         stats = {
             'fetched': total_fetched,
             'saved': total_saved,
             'duplicates': duplicates,
-            'sources': len(results)
+            'sources': len([r for r in results.values() if r])
         }
-
-        logger.info(
-            f"Summary - Fetched: {total_fetched}, Saved: {total_saved}, "
-            f"Duplicates: {duplicates}, Sources: {len(results)}"
-        )
 
         return stats
 
